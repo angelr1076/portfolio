@@ -1,19 +1,18 @@
+// import React from 'react';
+import Navbar from './components/Navbar';
+import About from './components/About';
+import Projects from './components/Projects';
+
 import './App.css';
 
 function App() {
   return (
     <>
-      <header>
-        <h1>Welcome!</h1>
-      </header>
       <main>
-        <section>
-          <h2>
-          </h2>
-        </section>
+        <Navbar />
+        <About />
+        <Projects />
       </main>
-      <div className="card">
-      </div>
     </>
   )
 }
