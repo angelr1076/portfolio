@@ -9,7 +9,7 @@ export default function Contact() {
   }
 
   return (
-    <section id='contact'>
+    <section className='contact'>
       <h2>Contact</h2>
 
       <form onSubmit={handleSubmit}>

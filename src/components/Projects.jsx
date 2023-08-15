@@ -17,7 +17,7 @@ export default function Projects() {
   ];
   
   return (
-    <section id='projects'>
+    <section className='projects'>
       {projects.map(project => (
         <ProjectCard
           key={project.id}

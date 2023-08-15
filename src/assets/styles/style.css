@@ -15,16 +15,27 @@
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 1em;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+h2 {
+  font-size: 2.2em;
+  line-height: 1.1;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .navbar {
@@ -39,7 +50,7 @@ h1 {
   list-style-type: none;
   padding: 0;
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
 }
 
 .nav-item {
@@ -102,50 +113,54 @@ h1 {
 }
 
 /* Landing */
-#landing {
+.landing {
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
+}
+
+.landing img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* About */
-#about {
+.about {
   display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 800px;
+  /* flex-direction: row-reverse; */
 }
 
-#about > div {
-  flex: 1;
+.bio-desc {
+  display: flex;
+  flex-direction: column;
+  /* flex: 5; */
+  /* padding: 10em; */
 }
+
+.bio-img {
+  display: flex;
+  /* flex-direction: column; */
+  /* flex: 3; */
+  justify-content: flex-start;
+}
+/* .about > div {
+  flex: 1;
+} */
 
 /* Projects
 Resume
 Landing */
-#projects,
-#resume,
-#contact {
+.projects,
+.resume,
+.contact {
   height: 100vh;
 }
 
 @media (max-width: 768px) {
-  #about {
-    flex-direction: column;
-  }
-
-  #about > div {
-    max-width: 80%;
-    margin: 0 auto;
-  }
-
-  #about h2,
-  #about p {
-    max-width: 100%;
-    text-align: left;
-  }
-
-  #about > div:first-child {
-    padding-right: 0;
-  }
-
   .navbar-toggler {
     display: block;
   }
@@ -165,6 +180,30 @@ Landing */
 
   .nav-link {
     text-align: center;
+  }
+
+  .landing {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .about > div {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .about h2,
+  .about p {
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .about > div:first-child {
+    padding-right: 0;
   }
 }
 

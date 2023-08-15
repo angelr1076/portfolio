@@ -1,6 +1,6 @@
 export default function Skills() {
   return (
-    <section id='resume'>
+    <section id='className'>
       <h2>Skills</h2>
 
       <div className='skills-list'>

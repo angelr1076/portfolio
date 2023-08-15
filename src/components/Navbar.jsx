@@ -15,7 +15,7 @@ export default function Navbar() {
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
-            <li className="nav-item"><Link className="nav-link" to="/landing">Home</Link></li>
+            <li className="nav-item"><Link className="nav-link" to="/">Home</Link></li>
             <li className="nav-item"><Link className="nav-link" to="/about">About</Link></li>
             <li className="nav-item"><Link className="nav-link" to="/projects">Projects</Link></li>
             <li className="nav-item"><Link className="nav-link" to="/resume">Resume</Link></li>
@@ -24,7 +24,7 @@ export default function Navbar() {
         </div>
       </nav>
       <Routes>
-        {/* <Route path="/landing" element={<Landing />} /> */}
+        <Route path="/" element={<Landing />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/resume" element={<Resume />} />
