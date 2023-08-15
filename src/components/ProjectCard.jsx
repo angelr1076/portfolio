@@ -1,13 +1,13 @@
 import PropTypes from 'prop-types';
 
-
+// Adding styling to the project card
 export default function ProjectCard({ title, description, image }) {
   // display a project card
   return (
     <div>
-      <h3>{title}</h3>
-      <p>{description}</p>
-      <img src={image} />
+      <h3 className="project__title">{title}</h3>
+      <p className="project__description">{description}</p>
+      <img src={image} className='project-card__img' />
     </div>
   )
 }
