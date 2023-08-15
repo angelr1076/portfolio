@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import "../assets/styles/style.css";
 
 // Adding styling to the project card
 export default function ProjectCard({ title, description, image }) {

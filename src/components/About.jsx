@@ -8,6 +8,7 @@ export default function About() {
         <img src={img} />
       </div>
       <div className='bio-desc'>
+        <h2>About Me</h2>
         <p>Driven by a childhood curiosity to understand how things work, I&apos;ve always been passionate about dismantling and reassembling the world around me. As a classically trained chef, I sharpened my skills and learned the value of attention to detail, hard work, and team collaboration.</p>
 
         <p>Recognizing that my interests gravitated towards technology, I pivoted my career and took the plunge into a full-time web development bootcamp. This transformative experience taught me the power of rapid learning, resilience, and the importance of embracing new challenges.</p>
