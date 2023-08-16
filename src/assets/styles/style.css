@@ -17,11 +17,16 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  --navbar-height: 60px;
 }
 
 body {
   margin: 0 auto;
   padding: 0 1em;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -30,17 +35,32 @@ h1 {
 }
 
 h2 {
-  font-size: 2.2em;
+  font-size: 2.5em;
   line-height: 1.1;
 }
 
+/* Main container  */
 .main {
-  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.main > section {
   height: 100vh;
+  /* transform: translateY(60px); */
+  padding-top: var(--navbar-height);
+}
+
+section > h2 {
+  line-height: 1.1;
+  text-align: center;
+}
+
+hr {
+  width: 75%;
+  opacity: 0.2;
 }
 
 .navbar {
@@ -48,14 +68,15 @@ h2 {
   top: 0;
   width: 100%;
   background-color: #242424;
+  opacity: 0.9;
   z-index: 1000;
 }
 
+/* Navbar section */
 .navbar-nav {
   list-style-type: none;
   padding: 0;
   display: flex;
-  /* justify-content: space-around; */
 }
 
 .nav-item {
@@ -108,20 +129,12 @@ h2 {
   bottom: -10px;
 }
 
-.main {
-  display: flex;
-  flex-direction: column;
-}
-
-.main > section {
-  height: 100vh;
-}
-
 /* Landing */
 .landing {
   display: flex;
   justify-content: center;
   max-width: 1200px;
+  /* height: 100vh; */
 }
 
 .landing img {
@@ -166,6 +179,10 @@ h2 {
 /* Projects
 Resume
 Landing */
+.projects {
+  width: 100%;
+}
+
 .projects,
 .resume,
 .contact {
@@ -181,10 +198,12 @@ Landing */
 }
 
 .contact {
+  width: 100%;
+  padding: 2em 0;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2em 0;
 }
 
 .contact h2 {
@@ -195,6 +214,7 @@ Landing */
 .contact form {
   width: 100%;
   max-width: 800px;
+
   display: flex;
   flex-direction: column;
   gap: 1em;

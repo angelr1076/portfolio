@@ -9,13 +9,13 @@ export default function Contact() {
   }
 
   return (
-    <section className='contact'>
+    <section id='contact' className='contact'>
       <h2>Contact</h2>
 
       <form onSubmit={handleSubmit}>
         <input placeholder='Name' />
         <input placeholder='Email' />
-        <textarea placeholder='Message' />
+        <textarea placeholder='Message' rows='8'/>
         <button type='submit'>Send</button>
       </form>
     </section>

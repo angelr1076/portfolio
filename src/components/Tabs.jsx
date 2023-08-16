@@ -6,7 +6,7 @@ import ProjectCard from "./ProjectCard";
 
 export default function TabComponent() {
   return (
-    <div className="App">
+    <div id='tabs' className="tabs">
       <Tabs>
         <TabList>
           <Tab>JavaScript</Tab>

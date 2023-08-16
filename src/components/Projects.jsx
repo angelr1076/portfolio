@@ -4,7 +4,8 @@ import Tabs from "./Tabs";
 export default function Projects() {
   
   return (
-    <section className='projects'>  
+    <section id='projects' className='projects'>  
+    <h2>Projects</h2>
       <Tabs/>
     </section>
   );
