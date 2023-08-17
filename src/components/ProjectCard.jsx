@@ -5,10 +5,14 @@ import "../assets/styles/style.css";
 export default function ProjectCard({ title, description, image }) {
   // display a project card
   return (
-    <div>
-      <h3 className="project__title">{title}</h3>
-      <p className="project__description">{description}</p>
-      <img src={image} className='project-card__img' />
+    <div className='project-card'>
+      <div className="img-container">
+        <img src={image} className='project-card__img' />
+      </div>
+      <div className="project-card__details-container">
+        <h3 className="project__title">{title}</h3>
+        <p className="project__description">{description}</p>
+      </div>
     </div>
   )
 }

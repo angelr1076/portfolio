@@ -1,10 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,600&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 :root {
-  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;*/
-  font-family: 'Bricolage Grotesque', sans-serif;
-  /* font-family: 'Poppins', sans-serif; */
+  font-family: 'Poppins', sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -94,6 +91,7 @@ hr {
 .nav-link:hover {
   color: #242424;
   background-color: rgba(255, 255, 255, 0.87);
+  cursor: pointer;
 }
 
 .navbar-toggler {
@@ -172,13 +170,15 @@ hr {
   /* flex: 3; */
   justify-content: flex-start;
 }
-/* .about > div {
-  flex: 1;
-} */
 
-/* Projects
-Resume
-Landing */
+.tab-panel {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-snap-type: x mandatory;
+}
+
+/* Projects, Tabs */
 .projects {
   width: 100%;
 }
@@ -189,8 +189,26 @@ Landing */
   height: 100vh;
 }
 
+.project-card {
+  max-width: 400px;
+  height: 300px;
+  border: 2px solid purple;
+  scroll-snap-align: start;
+
+  display: inline-flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+}
+
 .project-card__img {
-  max-width: 500px;
+  max-width: 400px;
+}
+
+.project-card__details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
 }
 
 .resume__img {

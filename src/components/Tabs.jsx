@@ -1,5 +1,6 @@
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
+import "../assets/styles/style.css";
 import jsProjects from '../data/javascriptProjects';
 import pyProjects  from '../data/pythonProjects';
 import ProjectCard from "./ProjectCard";
@@ -12,7 +13,7 @@ export default function TabComponent() {
           <Tab>JavaScript</Tab>
           <Tab>Python</Tab>
         </TabList>
-        <TabPanel>
+        <TabPanel className='tab-panel'>
           {jsProjects.map(project => (
         <ProjectCard
           key={project.id}
@@ -20,7 +21,7 @@ export default function TabComponent() {
         />
       ))}
         </TabPanel>
-        <TabPanel>
+        <TabPanel className='tab-panel'>
           {pyProjects.map(project => (
         <ProjectCard
           key={project.id}

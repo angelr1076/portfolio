@@ -11,13 +11,9 @@ function App() {
       <main className='main'>
         <Navbar />
         <Landing />
-        <hr />
         <About />
-        <hr />
         <Projects />
-        <hr />
         <Resume />
-        <hr />
         <Contact />
       </main>
   );
