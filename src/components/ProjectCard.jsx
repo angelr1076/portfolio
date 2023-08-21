@@ -1,18 +1,16 @@
-import PropTypes from 'prop-types';
 import "../assets/styles/style.css";
-
-// Adding styling to the project card
-export default function ProjectCard({ title, description, image }) {
-  // display a project card
+import PropTypes from 'prop-types';
+export default function ProjectCard({title, description, image}) {
+  
   return (
     <div className='project-card'>
-      <div className="img-container">
-        <img src={image} className='project-card__img' />
-      </div>
-      <div className="project-card__details-container">
-        <h3 className="project__title">{title}</h3>
-        <p className="project__description">{description}</p>
-      </div>
+      <img src={image}/>
+      <h3 className='title'>{title}</h3> 
+      <p>{description}</p>
+      {/* <div className="btn-container">
+        <button className="btn live">Live Demo</button>
+        <button className="btn github">Github</button>
+      </div> */}
     </div>
   )
 }

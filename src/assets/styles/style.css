@@ -45,8 +45,6 @@ h2 {
 }
 
 .main > section {
-  height: 100vh;
-  /* transform: translateY(60px); */
   padding-top: var(--navbar-height);
 }
 
@@ -132,7 +130,7 @@ hr {
   display: flex;
   justify-content: center;
   max-width: 1200px;
-  /* height: 100vh; */
+  height: 100vh;
 }
 
 .landing img {
@@ -190,18 +188,14 @@ hr {
 }
 
 .project-card {
-  max-width: 400px;
-  height: 300px;
-  border: 2px solid purple;
-  scroll-snap-align: start;
+  max-width: 500px;
 
   display: inline-flex;
   flex-direction: column;
-  flex: 0 0 auto;
 }
 
 .project-card__img {
-  max-width: 400px;
+  max-width: 500px;
 }
 
 .project-card__details-container {
@@ -209,6 +203,38 @@ hr {
   flex-direction: column;
   justify-content: space-between;
   flex: 1;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+/* button {
+  background-color: #43d55c !important;
+}
+
+button:hover {
+  background-color: #2fb345 !important;
+} */
+
+/* Force carousel buttons colors to be inverted */
+.css-1qzevvg img {
+  -webkit-filter: invert(1);
+  filter: invert(1);
+}
+
+.slide-enter {
+  transform: translateX(-100%);
+  transition: transform 500ms ease;
+}
+
+.slide-enter-active {
+  transform: translateX(0);
 }
 
 .resume__img {
