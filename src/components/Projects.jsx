@@ -4,7 +4,7 @@ export default function Projects() {
   
   return (
       <section id='projects' className='projects'>  
-      <h2>Projects</h2>
+      <h2 className='page-header'>Projects</h2>
       <ProjectsCarousel />
       </section>
   );
