@@ -1,6 +1,12 @@
 export default function Contact() {
   function handleSubmit(e) {
-    // send form data
+    // send form data and all fields to email
+    // https://www.emailjs.com/docs/examples/reactjs/
+    // https://www.emailjs.com/docs/sdk/send/
+    // https://www.emailjs.com/docs/sdk/installation/
+    // https://www.emailjs.com/docs/sdk/send-form/
+
+    // prevent page refresh
     e.preventDefault();
     
     // clear form

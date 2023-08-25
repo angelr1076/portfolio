@@ -9,7 +9,7 @@ export default function Landing() {
         <h2>App Developer</h2>
       </div>
       <div>
-        <img src={img} />
+        <img src={img} className='landing__img'/>
       </div>
     </section>
   );

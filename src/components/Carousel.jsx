@@ -19,6 +19,8 @@ export default function ProjectsCarousel() {
     <div style={{ width: '40%', height: '500px', margin: '0 auto' }}>
       <Carousel
         slides={slides}
+        goToSlideDelay={500}
+        goToSlide={0}
         changeSlide={changeSlide}
         offsetRadius={0}
         animationConfig={config.gentle}

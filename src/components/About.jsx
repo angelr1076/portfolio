@@ -3,9 +3,9 @@ import img from '../assets/images/bitmojime.png';
 export default function About() {
 
   return (
-    <section>
+    <section className="about">
       <h2 className='page-header'>About Me</h2>
-      <div className="about">
+      <div>
         <div className='bio-img'>
           <img src={img} />
         </div>
