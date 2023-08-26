@@ -321,6 +321,21 @@ button:active {
   transform: scale(0.98);
 }
 
+.footer {
+  margin-top: 1rem;
+  padding: 0 1rem;
+  background-color: #43d55c;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0.9;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (max-width: 500px) {
   .project-card {
     flex-direction: column;
