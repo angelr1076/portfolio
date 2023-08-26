@@ -1,4 +1,4 @@
-import "../assets/styles/style.css";
+import '../assets/styles/style.css';
 import PropTypes from 'prop-types';
 
 function handleClick(e) {
@@ -15,12 +15,14 @@ export default function ProjectCard({title, description, image, live, github}) {
   
   return (
     <div className='project-card'>
-      <img src={image}/>
-      <h3 className='title'>{title}</h3> 
-      <p>{description}</p>
-      <div className="btn-container">
-        <button className="btn live" href={live} rel='noreferrer' onClick={handleClick}>Live Demo</button>
-        <button className="btn github" href={github} rel='noreferrer' onClick={handleClick}>Github</button>
+      <img src={image} className='project-card__img'/>
+        <div className='project-card__details-container'>
+        <h3 className='title'>{title}</h3> 
+        <p>{description}</p>
+        <div className='btn-container'>
+          <button className='btn live' href={live} rel='noreferrer' onClick={handleClick}>Live Demo</button>
+          <button className='btn github' href={github} rel='noreferrer' onClick={handleClick}>Github</button>
+        </div>
       </div>
     </div>
   )

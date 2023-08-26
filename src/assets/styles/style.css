@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import 'react-alice-carousel/lib/alice-carousel.css';
 
 :root {
   font-family: 'Poppins', sans-serif;
@@ -201,9 +202,10 @@ hr {
 
 .project-card {
   max-width: 500px;
+  display: block;
 
-  display: inline-flex;
-  flex-direction: column;
+  /* display: inline-flex;
+  flex-direction: column; */
 }
 
 .project-card__img {
@@ -254,8 +256,16 @@ button:hover {
   transform: translateX(0);
 }
 
-.resume__img {
+/* .resume__img {
   max-width: 800px !important;
+} */
+
+.resume__container {
+  max-width: 800px;
+}
+
+.resume__img {
+  width: 100%;
 }
 
 .contact {
@@ -309,6 +319,16 @@ button:hover {
 
 button:active {
   transform: scale(0.98);
+}
+
+@media (max-width: 500px) {
+  .project-card {
+    flex-direction: column;
+  }
+
+  .project-card__img {
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
