@@ -37,6 +37,11 @@ h2 {
   line-height: 1.1;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
 /* Main container  */
 .main {
   display: flex;
@@ -321,12 +326,14 @@ button:active {
 .top-to-btm {
   position: relative;
 }
+
 .icon-position {
   position: fixed;
   bottom: 40px;
   right: 25px;
   z-index: 20;
 }
+
 .icon-style {
   background-color: #551b54;
   border: 2px solid #fff;
@@ -338,12 +345,14 @@ button:active {
   animation: movebtn 3s ease-in-out infinite;
   transition: all 0.5s ease-in-out;
 }
+
 .icon-style:hover {
   animation: none;
   background: #fff;
   color: #551b54;
   border: 2px solid #551b54;
 }
+
 @keyframes movebtn {
   0% {
     transform: translateY(0px);
@@ -364,17 +373,24 @@ button:active {
 
 .footer {
   margin-top: 1rem;
-  padding: 0 1rem;
+  padding: 0.75rem;
   background-color: #43d55c;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  opacity: 0.9;
+  opacity: 0.8;
 
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 3em;
+}
+
+.footer__link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.5em;
 }
 
 @media (max-width: 500px) {
