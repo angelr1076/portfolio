@@ -79,6 +79,7 @@ hr {
   opacity: 0.2;
 }
 
+/* Navbar section */
 .navbar {
   position: sticky;
   top: 0;
@@ -88,7 +89,6 @@ hr {
   z-index: 1000;
 }
 
-/* Navbar section */
 .navbar-nav {
   list-style-type: none;
   padding: 0;
@@ -111,6 +111,11 @@ hr {
   color: #242424;
   background-color: rgba(255, 255, 255, 0.87);
   cursor: pointer;
+}
+
+.nav-link.active {
+  background-color: rgba(255, 255, 255, 0.87);
+  color: #242424;
 }
 
 .navbar-toggler {
@@ -150,7 +155,6 @@ hr {
 .landing {
   display: flex;
   justify-content: center;
-  /* max-width: 800px; */
   height: 100vh;
 }
 
@@ -203,9 +207,6 @@ hr {
 .project-card {
   max-width: 500px;
   display: block;
-
-  /* display: inline-flex;
-  flex-direction: column; */
 }
 
 .project-card__img {
@@ -255,10 +256,6 @@ button:hover {
 .slide-enter-active {
   transform: translateX(0);
 }
-
-/* .resume__img {
-  max-width: 800px !important;
-} */
 
 .resume__container {
   max-width: 800px;
@@ -396,11 +393,16 @@ button:active {
   }
 
   .navbar-collapse {
-    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+    opacity: 0;
   }
 
   .navbar-collapse.show {
     display: block;
+    max-height: 500px;
+    opacity: 1;
   }
 
   .navbar-nav {
