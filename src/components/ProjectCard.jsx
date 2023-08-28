@@ -18,7 +18,7 @@ export default function ProjectCard({title, description, image, live, github}) {
       <img src={image} className='project-card__img'/>
         <div className='project-card__details-container'>
         <h3 className='title'>{title}</h3> 
-        <p>{description}</p>
+        <p className='description'>{description}</p>
         <div className='btn-container'>
           <button className='btn live' href={live} rel='noreferrer' onClick={handleClick}>Live Demo</button>
           <button className='btn github' href={github} rel='noreferrer' onClick={handleClick}>Github</button>

@@ -215,7 +215,7 @@ hr {
 }
 
 .project-card__img {
-  max-width: 500px;
+  max-width: 400px;
 }
 
 .project-card__details-container {
@@ -235,8 +235,13 @@ hr {
 }
 
 .title {
-  font-size: 1.5em;
+  font-size: 1.25em;
   font-weight: 600;
+}
+
+.description {
+  font-size: 0.9em;
+  font-weight: 400;
 }
 
 button {
@@ -400,6 +405,16 @@ button:active {
 
   .project-card__img {
     width: 100%;
+  }
+
+  .landing {
+    display: block;
+    padding-top: 0;
+    padding: 0;
+  }
+
+  p {
+    font-size: 1.1em;
   }
 }
 
