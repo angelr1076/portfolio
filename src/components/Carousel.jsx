@@ -9,6 +9,7 @@ const projectsMap = projects.map(project => {
     <ProjectCard 
       key={project.key}
       title={project.title}
+      builtWith={project.builtWith}
       description={project.description}
       image={project.image}
       live={project.live}

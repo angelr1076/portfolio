@@ -8,7 +8,7 @@ const projects = [
       'https://res.cloudinary.com/angelrodriguez/image/upload/v1692116373/portfolio_2023/battleship_screen.png',
     live: 'https://battleship-boom.netlify.app/',
     github: 'https://github.com/angelr1076/Battleship',
-    builtWith: ['BiLogoJavascript'],
+    builtWith: ['SiJavascript', 'SiJest', 'SiBootstrap', 'SiWebpack'],
   },
   {
     key: 2,
@@ -19,6 +19,7 @@ const projects = [
       'https://res.cloudinary.com/angelrodriguez/image/upload/v1692116373/portfolio_2023/weather__screen.png',
     live: 'https://odin-weatherly.netlify.app/',
     github: 'https://github.com/angelr1076/Weather-App',
+    builtWith: ['SiJavascript', 'SiDotenv', 'SiBootstrap', 'SiWebpack'],
   },
   {
     key: 3,
@@ -29,16 +30,18 @@ const projects = [
       'https://res.cloudinary.com/angelrodriguez/image/upload/v1693256876/mapattack.png',
     live: 'https://mapattackre.netlify.app/',
     github: 'https://github.com/angelr1076/MapAttackRemastered',
+    builtWith: ['SiJavascript', 'SiGooglemaps'],
   },
   {
     key: 4,
     title: "Knight's Travails",
     description:
-      'The Knights Travails project uses a Breadth-First Search (BFS) algorithm to find the shortest path a chess knight can take between two squares on an 8x8 board. The function, knightMoves, outputs the squares the knight will land on along the way, treating the board as a 2D coordinate system.',
+      'Knights Travails uses a Breadth-First Search (BFS) algorithm to find the shortest path a chess knight can take between two squares on an 8x8 board. The function, knightMoves, outputs the squares the knight will land on along the way, treating the board as a 2D coordinate system.',
     image:
       'https://res.cloudinary.com/angelrodriguez/image/upload/v1693256876/knightstravails.png',
     live: 'https://angelr1076.github.io/Knight-Travails/',
     github: 'https://github.com/angelr1076/Knight-Travails',
+    builtWith: ['SiJavascript'],
   },
   {
     key: 5,
@@ -49,6 +52,7 @@ const projects = [
       'https://res.cloudinary.com/angelrodriguez/image/upload/v1692116373/portfolio_2023/cct_screen.png',
     live: 'https://cct.up.railway.app/',
     github: 'https://github.com/angelr1076/django-cct',
+    builtWith: ['SiJavascript', 'SiPython', 'SiDjango'],
   },
   {
     key: 6,
@@ -59,6 +63,7 @@ const projects = [
       'https://res.cloudinary.com/angelrodriguez/image/upload/v1692116373/portfolio_2023/mibrary_screen.png',
     live: 'https://mibrary.up.railway.app/',
     github: 'https://github.com/angelr1076/django-mibrary',
+    builtWith: ['SiJavascript', 'SiPython', 'SiDjango'],
   },
 ];
 
