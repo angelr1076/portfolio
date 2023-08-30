@@ -16,7 +16,7 @@ const projects = [
     description:
       'Featuring daily and five-day forecasts with unique weather icons and temperature toggles, this app uses modern tech like Async/Await, Webpack, and various APIs, and even offers a dark/light theme switch.',
     image:
-      'https://res.cloudinary.com/angelrodriguez/image/upload/v1692116373/portfolio_2023/weather__screen.png',
+      'https://res.cloudinary.com/angelrodriguez/image/upload/v1693332271/odin_weather.png',
     live: 'https://odin-weatherly.netlify.app/',
     github: 'https://github.com/angelr1076/Weather-App',
     builtWith: ['SiJavascript', 'SiDotenv', 'SiBootstrap', 'SiWebpack'],

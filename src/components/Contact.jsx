@@ -1,27 +1,80 @@
+import { useState } from 'react';
+import { send } from 'emailjs-com';
+
+const serviceID = import.meta.env.VITE_serviceID;
+const templateID = import.meta.env.VITE_templateID;
+const publicKey = import.meta.env.VITE_publicKey;
+
 export default function Contact() {
-  function handleSubmit(e) {
-    // send form data and all fields to email
-    // https://www.emailjs.com/docs/examples/reactjs/
-    // https://www.emailjs.com/docs/sdk/send/
-    // https://www.emailjs.com/docs/sdk/installation/
-    // https://www.emailjs.com/docs/sdk/send-form/
+  const [toSend, setToSend] = useState({
+    from_name: '',
+    message: '',
+    reply_to: '' 
+  });
 
-    // prevent page refresh
-    e.preventDefault();
-    
-    // clear form
-    e.target.reset();
-
+  const handleSubmit = (e) => {
+     e.preventDefault();
+      send(
+        serviceID,
+        templateID,
+        toSend,
+        publicKey,
+      )
+        .then((response) => {
+          console.log('SUCCESS!', response.status, response.text);
+          e.target.reset();
+      
+          setToSend({
+            from_name: '',
+            message: '',
+            reply_to: ''
+          });
+        })
+        .catch((err) => {
+          console.log('FAILED...', err);
+        });
+      
+      e.target.reset();
   }
+
+  const handleChange = (e) => {
+    setToSend({ ...toSend, [e.target.name]: e.target.value });
+  };
 
   return (
     <section id='contact' className='contact'>
       <h2 className='page-header'>Contact</h2>
       <form onSubmit={handleSubmit}>
-        <input placeholder='Name' />
-        <input placeholder='Email' />
-        <textarea placeholder='Message' rows='8'/>
-        <button type='submit'>Send</button>
+        <input
+          type='text'
+          name='to_name'
+          placeholder='angelrod'
+          value='angelrod'
+          disabled
+          hidden
+        />
+        <input
+          type='text'
+          name='from_name'
+          placeholder='from name'
+          value={toSend.from_name}
+          onChange={handleChange}
+        />
+        <input
+          type='text'
+          name='reply_to'
+          placeholder='Your email'
+          value={toSend.reply_to}
+          onChange={handleChange}
+        />
+        <textarea
+          name='message'
+          placeholder='Your message'
+          rows={8}
+          value={toSend.message}
+          onChange={handleChange}
+        />
+        <button type='submit'>Submit</button>
       </form>
     </section>
   );

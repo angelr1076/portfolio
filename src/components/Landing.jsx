@@ -4,7 +4,7 @@ export default function Landing() {
 
   return (
     <section id='landing' className='landing'>
-      <div>
+      <div className='landing__header'>
         <h1>Angel Rodriguez</h1>
         <h2>App Developer</h2>
       </div>

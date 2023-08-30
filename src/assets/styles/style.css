@@ -170,6 +170,12 @@ hr {
   transform: translateY(30px);
 }
 
+.landing__header > h1 {
+  font-size: 3.5em;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+
 .landing,
 .about {
   gap: 2em;
@@ -299,6 +305,14 @@ button:hover {
   display: flex;
   flex-direction: column;
   gap: 1em;
+}
+
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
 }
 
 input,
