@@ -45,7 +45,13 @@ export default function Contact() {
   const [isSent, setIsSent] = useState(false);
 
   const handleSubmit = (e) => {
-     e.preventDefault();
+    e.preventDefault();
+
+    if (!toSend.from_name || !toSend.reply_to || !toSend.message) {
+      alert('Please fill out all fields');
+      return;
+    }
+
       send(
         serviceID,
         templateID,
@@ -77,7 +83,7 @@ export default function Contact() {
 
   return (
     <section id='contact' className='contact'>
-      <h2 className='page-header'>Contact</h2>
+      <h2 className='page-header'>Contact Me</h2>
       {/* Send confirmation message */}
       {isSent && <Notification />}
       <form onSubmit={handleSubmit}>
@@ -92,13 +98,15 @@ export default function Contact() {
         <input
           type='text'
           name='from_name'
-          placeholder='from name'
+          required
+          placeholder='From (name)'
           value={toSend.from_name}
           onChange={handleChange}
         />
         <input
           type='text'
           name='reply_to'
+          required
           placeholder='Your email'
           value={toSend.reply_to}
           onChange={handleChange}
@@ -106,6 +114,7 @@ export default function Contact() {
         <textarea
           name='message'
           placeholder='Your message'
+          required
           rows={8}
           value={toSend.message}
           onChange={handleChange}

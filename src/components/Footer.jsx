@@ -1,4 +1,5 @@
-import { FaLinkedin, FaGithub,  } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaReact } from 'react-icons/fa';
+import { SiVite } from 'react-icons/si';
 import { GoMail } from 'react-icons/go';
 
 
@@ -14,6 +15,7 @@ export default function Footer () {
       <a href='mailto:devlife@beachlife.email' className='footer__link' rel='noreferrer' target='_blank'>
         <GoMail />
       </a>
+      <p>Built With <FaReact /> <SiVite /></p>
     </div>
     )
 }
