@@ -1,9 +1,39 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { send } from 'emailjs-com';
 
 const serviceID = import.meta.env.VITE_serviceID;
 const templateID = import.meta.env.VITE_templateID;
 const publicKey = import.meta.env.VITE_publicKey;
+
+const Notification = () => {
+
+  const [show, setShow] = useState(true);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(false); 
+    }, 3000);
+
+    return () => clearTimeout(timeout);
+  }, []);
+
+  return (
+    <>
+      {show && 
+        <div className="notification" style={{
+          backgroundColor: '#43d55c',
+          color: 'white',
+          padding: '8px 16px',
+          marginBottom: '16px',
+          borderRadius: '4px',
+          textAlign: 'center'
+        }}>
+          Message sent! Thank you!
+        </div>  
+      }
+    </>
+  );
+}
 
 export default function Contact() {
   const [toSend, setToSend] = useState({
@@ -11,6 +41,8 @@ export default function Contact() {
     message: '',
     reply_to: '' 
   });
+
+  const [isSent, setIsSent] = useState(false);
 
   const handleSubmit = (e) => {
      e.preventDefault();
@@ -22,6 +54,8 @@ export default function Contact() {
       )
         .then((response) => {
           console.log('SUCCESS!', response.status, response.text);
+          setIsSent(true);
+          // Clear form
           e.target.reset();
       
           setToSend({
@@ -44,6 +78,8 @@ export default function Contact() {
   return (
     <section id='contact' className='contact'>
       <h2 className='page-header'>Contact</h2>
+      {/* Send confirmation message */}
+      {isSent && <Notification />}
       <form onSubmit={handleSubmit}>
         <input
           type='text'

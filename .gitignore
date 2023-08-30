@@ -1,6 +1,5 @@
 # Env files
-.env.development
-.env.production
+.env
 
 # Logs
 logs
