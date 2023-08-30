@@ -11,7 +11,7 @@ export default function Footer () {
       <a href='https://github.com/angelr1076' className='footer__link' rel='noreferrer' target='_blank'>
         <FaGithub />
       </a>
-      <a href='mailto:angelrod@beachlife.email' className='footer__link' rel='noreferrer' target='_blank'>
+      <a href='mailto:devlife@beachlife.email' className='footer__link' rel='noreferrer' target='_blank'>
         <GoMail />
       </a>
     </div>

@@ -204,7 +204,7 @@ hr {
   scroll-snap-type: x mandatory;
 }
 
-/* Projects, Tabs */
+/* Projects */
 .projects {
   width: 100%;
 }
@@ -262,21 +262,6 @@ button {
 
 button:hover {
   background-color: #2fb345 !important;
-}
-
-/* Force carousel buttons colors to be inverted */
-.css-1qzevvg img {
-  -webkit-filter: invert(1);
-  filter: invert(1);
-}
-
-.slide-enter {
-  transform: translateX(-100%);
-  transition: transform 500ms ease;
-}
-
-.slide-enter-active {
-  transform: translateX(0);
 }
 
 .resume__container {
