@@ -1,4 +1,4 @@
-# angelrod.dev Portfolio Site
+# Portfolio Site
 
 ![Homepage image](./src/assets/images/portfolio-image.png 'Screenshot of portfolio homepage')
 
