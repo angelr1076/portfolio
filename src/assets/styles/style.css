@@ -393,6 +393,14 @@ button:active {
   font-size: 1.5em;
 }
 
+.react-logo,
+.vite-logo {
+  cursor: pointer;
+  width: 1.5em;
+  height: 1.5em;
+  margin: 0 0.5em;
+}
+
 @media (max-width: 500px) {
   .project-card {
     flex-direction: column;
