@@ -1,5 +1,7 @@
 # angelrod.dev Portfolio Site
 
+![Homepage image](./src/assets/images/portfolio-image.png 'Screenshot of portfolio homepage')
+
 angelrod.dev is built using React and showcases my projects, skills, and experience as an app developer. It features several sections including a landing, about, projects, resume, and contact section.
 
 The site is built using React functional components and hooks like useState and useEffect for managing state. Styling is done using CSS with a mobile-first responsive approach.
