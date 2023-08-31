@@ -197,13 +197,6 @@ hr {
   justify-content: center;
 }
 
-.tab-panel {
-  display: block;
-  overflow-x: auto;
-  white-space: nowrap;
-  scroll-snap-type: x mandatory;
-}
-
 /* Projects */
 .projects {
   width: 100%;
@@ -240,10 +233,6 @@ hr {
 .btn-container {
   display: flex;
   gap: 3em;
-}
-
-.css-1qzevvg {
-  cursor: pointer;
 }
 
 .title {
@@ -425,6 +414,10 @@ button:active {
 }
 
 @media (max-width: 768px) {
+  .main > section {
+    padding-top: 0;
+  }
+
   .navbar-toggler {
     display: block;
   }
