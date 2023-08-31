@@ -414,10 +414,6 @@ button:active {
 }
 
 @media (max-width: 768px) {
-  .main > section {
-    padding-top: 0;
-  }
-
   .navbar-toggler {
     display: block;
   }
