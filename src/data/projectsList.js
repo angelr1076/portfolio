@@ -3,7 +3,7 @@ const projects = [
     key: 1,
     title: 'Case Crime Trace',
     description:
-      'Case Crime Trace is a Django-based, mobile-responsive app that lets users and law enforcement report and track crimes and suspects. Features include real-time updates, user-specific tracking, and a well-organized, modular codebase.',
+      'Case Crime Trace is my final project for CS50 Web. A Django-based app that lets users and law enforcement report and track crimes and suspects. Features include real-time updates, user-specific tracking, and a well-organized, modular codebase.',
     image:
       'https://res.cloudinary.com/angelrodriguez/image/upload/v1692116373/portfolio_2023/cct_screen.png',
     live: 'https://cct.up.railway.app/',
@@ -14,7 +14,7 @@ const projects = [
     key: 2,
     title: 'Mibrary',
     description:
-      "Django Mibrary is my final project for CS50, offering a platform where users can create profiles, manage books, and leave reviews. It uses both function and class-based views, integrates Bootstrap alerts with Django's built-in messaging, and leverages the Cloudinary API for image storage and ckeditor for rich-text book summaries. Hosted on Railway.",
+      "Django Mibrary is my final project for CS50, offering a platform where users can create profiles, manage books, and leave reviews. It integrates Bootstrap alerts with Django's built-in messaging, and leverages the Cloudinary API for image storage and ckeditor for rich-text book summaries.",
     image:
       'https://res.cloudinary.com/angelrodriguez/image/upload/v1692116373/portfolio_2023/mibrary_screen.png',
     live: 'https://mibrary.up.railway.app/',
@@ -47,7 +47,7 @@ const projects = [
     key: 5,
     title: 'Battleship',
     description:
-      'Experience a responsive, intuitive game with an interactive UI, clear in-game messaging, and a smart AI opponent, all built using best practices like factory functions and module bundling via Webpack and Jest testing.',
+      'Battleship, just like the classic board-game, features a smart AI opponent, all built using best practices like factory functions and module bundling via Webpack and Jest testing.',
     image:
       'https://res.cloudinary.com/angelrodriguez/image/upload/v1692116373/portfolio_2023/battleship_screen.png',
     live: 'https://battleship-boom.netlify.app/',
@@ -58,7 +58,7 @@ const projects = [
     key: 6,
     title: 'Weather App',
     description:
-      'Featuring daily and five-day forecasts with unique weather icons and temperature toggles, this app uses modern tech like Async/Await, Webpack, and various APIs, and even offers a dark/light theme switch.',
+      'Featuring daily and five-day forecasts with unique weather icons and temperature toggles, the app uses async/await, Webpack, and various APIs, and even offers a dark/light theme switch.',
     image:
       'https://res.cloudinary.com/angelrodriguez/image/upload/v1693332271/odin_weather.png',
     live: 'https://odin-weatherly.netlify.app/',
