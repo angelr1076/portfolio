@@ -48,6 +48,7 @@ export default function Contact() {
     e.preventDefault();
 
     if (!toSend.from_name || !toSend.reply_to || !toSend.message) {
+      console.log('Validation failed');
       alert('Please fill out all fields');
       return;
     }
@@ -99,7 +100,7 @@ export default function Contact() {
           type='text'
           name='from_name'
           required
-          placeholder='From (name)'
+          placeholder='Your name'
           value={toSend.from_name}
           onChange={handleChange}
         />
