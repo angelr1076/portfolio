@@ -43,7 +43,7 @@ export default function Navbar() {
                 Projects
               </Link>
             </li>
-           <li className='nav-item'>
+            <li className='nav-item'>
               <Link
                 className='nav-link' activeClass="active" to='resume' spy={true} smooth={true} duration={500}>
               Resume

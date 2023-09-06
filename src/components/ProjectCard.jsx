@@ -1,7 +1,8 @@
 import '../assets/styles/style.css';
 import PropTypes from 'prop-types'
 import { SiJavascript, SiReact, SiJest, SiBootstrap, SiDotenv, SiWebpack, SiGooglemaps, SiPython, SiDjango } from "react-icons/si";
-
+import { BsGithub } from "react-icons/bs";
+import { FaCode } from "react-icons/fa6";
 
 function handleClick(e) {
   e.preventDefault();
@@ -38,8 +39,8 @@ export default function ProjectCard({title, description, image, live, github, bu
           </div>
         <p className='description'>{description}</p>
         <div className='btn-container'>
-          <button className='btn live' href={live} rel='noreferrer' onClick={handleClick}>Live Demo</button>
-          <button className='btn github' href={github} rel='noreferrer' onClick={handleClick}>Github</button>
+          <button className='btn live' href={live} rel='noreferrer' onClick={handleClick}><FaCode /></button>
+          <button className='btn github' href={github} rel='noreferrer' onClick={handleClick}><BsGithub /></button>
         </div>
       </div>
     </div>

@@ -108,19 +108,16 @@ hr {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.87);
   padding: 0.5em 1em;
-  border-radius: 4px;
   transition: background-color 0.3s;
 }
 
 .nav-link:hover {
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+  border-bottom: 2px solid rgba(157, 150, 150, 0.87);
   cursor: pointer;
 }
 
 .nav-link.active {
-  background-color: rgba(255, 255, 255, 0.87);
-  color: #242424;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.87);
 }
 
 .navbar-toggler {
@@ -228,6 +225,11 @@ hr {
   display: flex;
   gap: 1em;
   align-items: center;
+}
+
+.live,
+.github {
+  width: 75px;
 }
 
 .btn-container {
