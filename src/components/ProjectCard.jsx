@@ -2,11 +2,11 @@ import '../assets/styles/style.css';
 import PropTypes from 'prop-types'
 import { SiJavascript, SiReact, SiJest, SiBootstrap, SiDotenv, SiWebpack, SiGooglemaps, SiPython, SiDjango } from "react-icons/si";
 import { BsGithub } from "react-icons/bs";
-import { FaCode } from "react-icons/fa6";
+import { CgWebsite } from "react-icons/cg";
 
 function handleClick(e) {
   e.preventDefault();
-  const href = e.target.getAttribute('href');
+  const href = e.target.getAttribute('data-href');
   window.open(href, '_blank');
 }
 
@@ -30,17 +30,35 @@ export default function ProjectCard({title, description, image, live, github, bu
           <div className="project-card__header-container">
             <h3 className='title'>{title}</h3> 
             <div className="built-with-icons">
-                {builtWith.map((icon, index) => (
-                  <span style={{ marginRight: '0.8em'}} key={index}>
-                    {iconMap[icon]}
-                  </span>
-                ))}
-              </div>
+              {builtWith.map((icon, index) => (
+                <span style={{ marginRight: '0.8em'}} key={index}>
+                  {iconMap[icon]}
+                </span>
+              ))}
+            </div>
           </div>
         <p className='description'>{description}</p>
         <div className='btn-container'>
-          <button className='btn live' href={live} rel='noreferrer' onClick={handleClick}><FaCode /></button>
-          <button className='btn github' href={github} rel='noreferrer' onClick={handleClick}><BsGithub /></button>
+          <button 
+            className='btn live' 
+            rel='noreferrer' 
+            data-href={live} 
+            alt='Live site'
+            title='Live site'
+            onClick={handleClick}
+            >
+              <CgWebsite />
+          </button>
+          <button 
+            className='btn github' 
+            rel='noreferrer' 
+            data-href={github} 
+            alt='Github repo'
+            title='Github repo'
+            onClick={handleClick}
+            >
+              <BsGithub />
+          </button>
         </div>
       </div>
     </div>
