@@ -7,7 +7,7 @@
   </div>
   <div>
   
-  [![Live Site](https://angelrod.dev/ 'Live website')]
+    <a href="https://angelrod.dev/" target="_blank">Live Site</a>
   
   </div>
 </div>
