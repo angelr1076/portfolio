@@ -7,7 +7,7 @@
   </div>
   <div>
   
-  [Live Site](https://angelrod.dev/ 'Live website')
+  [![Live Site](https://angelrod.dev/ 'Live website')]
   
   </div>
 </div>
