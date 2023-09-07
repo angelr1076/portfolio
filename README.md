@@ -1,7 +1,7 @@
 # Portfolio Site
 [![Netlify Status](https://api.netlify.com/api/v1/badges/956c3c68-b48b-410e-abef-4c540052bd94/deploy-status)](https://app.netlify.com/sites/angelrod/deploys)
 ![Homepage image](./src/assets/images/portfolio-image.png 'Screenshot of portfolio homepage')
-
+[Live Site](https://angelrod.dev/)
 angelrod.dev is built using React and showcases my projects, skills, and experience as an app developer. It features several sections including a landing, about, projects, resume, and contact section.
 
 The site is built using React functional components and hooks like useState and useEffect for managing state. Styling is done using CSS with a mobile-first responsive approach.
