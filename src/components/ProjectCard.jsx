@@ -6,8 +6,12 @@ import { CgWebsite } from "react-icons/cg";
 
 function handleClick(e) {
   e.preventDefault();
-  const href = e.target.getAttribute('data-href');
-  window.open(href, '_blank');
+  const href = e.currentTarget.getAttribute('data-href');
+  if (href) {
+    window.open(href, '_blank');
+  } else {
+    console.error("Missing URL");
+  }
 }
 
 const iconMap = {
