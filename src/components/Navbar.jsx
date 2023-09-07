@@ -3,6 +3,7 @@ import { Link } from 'react-scroll';
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false); 
+  const [landingActive, setLandingActive] = useState(true);
 
   const toggleMenu = () => { 
     setMenuOpen(!menuOpen);
@@ -27,31 +28,39 @@ export default function Navbar() {
           <ul className='navbar-nav'>
             <li className='nav-item'>
               <Link
-                className='nav-link' activeClass="active" to='landing' spy={true} smooth={true} offset={-50} duration={500}>
+                activeClass="active"
+                className={landingActive ? 'nav-link active' : 'nav-link'}
+                to="landing"
+                spy={true}
+                smooth={true}
+                offset={-50}  
+                duration={500}
+                onSetActive={() => setLandingActive(true)}
+                onSetInactive={() => setLandingActive(false)}> 
                 Home
               </Link>
             </li>
             <li className='nav-item'>
               <Link
-                className='nav-link' activeClass="active" to='about' spy={true} smooth={true} duration={500}>
+                className='nav-link' to='about' spy={true} smooth={true} duration={500}>
                 About
               </Link>
             </li>
             <li className='nav-item'>
               <Link
-                className='nav-link' activeClass="active" to='projects' spy={true} smooth={true} duration={500}>
+                className='nav-link' to='projects' spy={true} smooth={true} duration={500}>
                 Projects
               </Link>
             </li>
             <li className='nav-item'>
               <Link
-                className='nav-link' activeClass="active" to='resume' spy={true} smooth={true} duration={500}>
+                className='nav-link' to='resume' spy={true} smooth={true} duration={500}>
               Resume
             </Link>
             </li>
             <li className='nav-item'>
               <Link
-                className='nav-link' activeClass="active" to='contact' spy={true} smooth={true} duration={500}>
+                className='nav-link' to='contact' spy={true} smooth={true} duration={500}>
               Contact
             </Link>
             </li>
