@@ -11,6 +11,7 @@
   
   </div>
 </div>
+
 ![Homepage image](./src/assets/images/portfolio-image.png 'Screenshot of portfolio homepage')
 
 angelrod.dev is built using React and showcases my projects, skills, and experience as an app developer. It features several sections including a landing, about, projects, resume, and contact section.
