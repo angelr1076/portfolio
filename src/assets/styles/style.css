@@ -534,9 +534,6 @@ button:active {
   }
 }
 
-<<<<<<< HEAD
-@media (prefers-color-scheme: light) {
-=======
 body.dark {
   background-color: #242424;
   color: white;
@@ -604,7 +601,6 @@ body.light {
 }
 
 @media (prefers-color-scheme: dark) {
->>>>>>> light-dark-toggle
   :root {
     color: #213547;
     background-color: #ffffff;
