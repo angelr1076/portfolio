@@ -1,17 +1,23 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
+import { useTheme } from './ThemeContext';
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false); 
   const [landingActive, setLandingActive] = useState(true);
-
+  const { theme, toggleTheme } = useTheme();
+  
   const toggleMenu = () => { 
     setMenuOpen(!menuOpen);
   };
 
+  useEffect(() => {
+    document.body.className = theme;
+  }, [theme]);
+
   return (
     <>
-      <nav id='navbar' className='navbar'>
+      <nav id='navbar' className={`navbar ${theme === 'light' ? 'navbar-light' : ''}`}>
         <button
           className='navbar-toggler'
           type='button'
@@ -29,7 +35,8 @@ export default function Navbar() {
             <li className='nav-item'>
               <Link
                 activeClass="active"
-                className={landingActive ? 'nav-link active' : 'nav-link'}
+                className={`nav-link ${theme === 'light' ? 'nav-link-light' : ''}`}
+                // className={landingActive ? 'nav-link active' : 'nav-link'}
                 to="landing"
                 spy={true}
                 smooth={true}
@@ -42,27 +49,39 @@ export default function Navbar() {
             </li>
             <li className='nav-item'>
               <Link
-                className='nav-link' to='about' spy={true} smooth={true} duration={500}>
+                className={`nav-link ${theme === 'light' ? 'nav-link-light' : ''}`} to='about' spy={true} smooth={true} duration={500}>
                 About
               </Link>
             </li>
             <li className='nav-item'>
               <Link
-                className='nav-link' to='projects' spy={true} smooth={true} duration={500}>
+                className={`nav-link ${theme === 'light' ? 'nav-link-light' : ''}`} to='projects' spy={true} smooth={true} duration={500}>
                 Projects
               </Link>
             </li>
             <li className='nav-item'>
               <Link
-                className='nav-link' to='resume' spy={true} smooth={true} duration={500}>
+                className={`nav-link ${theme === 'light' ? 'nav-link-light' : ''}`} to='resume' spy={true} smooth={true} duration={500}>
               Resume
             </Link>
             </li>
             <li className='nav-item'>
               <Link
-                className='nav-link' to='contact' spy={true} smooth={true} duration={500}>
+                className={`nav-link ${theme === 'light' ? 'nav-link-light' : ''}`} to='contact' spy={true} smooth={true} duration={500}>
               Contact
             </Link>
+            </li>
+            <li className='nav-item'>
+              <div className="theme-switch-wrapper">
+                <label className="theme-switch">
+                  <input 
+                    type="checkbox"
+                    checked={theme === 'light'}
+                    onChange={toggleTheme}
+                  />
+                  <div className="slider round"></div>
+                </label>
+              </div>
             </li>
           </ul>
         </div>

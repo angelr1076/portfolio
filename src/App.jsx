@@ -7,9 +7,11 @@ import Resume from './components/Resume';
 import Contact from './components/Contact';
 import ScrollToTop from './components/ScrollToTop';
 import Footer from './components/Footer';
+import { ThemeProvider } from './components/ThemeContext';
 
 function App() {
   return (
+    <ThemeProvider>
       <main className='main'>
         <Navbar />
         <Landing />
@@ -20,6 +22,7 @@ function App() {
         <ScrollToTop />
         <Footer />
       </main>
+    </ThemeProvider>
   );
 }
 
