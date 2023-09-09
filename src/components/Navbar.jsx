@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 import { useTheme } from './ThemeContext';
+import { BsSun, BsMoonStars } from "react-icons/bs";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false); 
@@ -73,14 +74,17 @@ export default function Navbar() {
             </li>
             <li className='nav-item'>
               <div className="theme-switch-wrapper">
+                <BsMoonStars />
                 <label className="theme-switch">
                   <input 
                     type="checkbox"
                     checked={theme === 'light'}
                     onChange={toggleTheme}
                   />
-                  <div className="slider round"></div>
+                  <div className="slider round">
+                  </div>
                 </label>
+                <BsSun />
               </div>
             </li>
           </ul>

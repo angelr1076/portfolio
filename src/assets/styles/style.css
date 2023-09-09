@@ -161,6 +161,10 @@ hr {
   justify-content: center;
 }
 
+.theme-switch-wrapper svg {
+  margin: 0 10px;
+}
+
 .theme-switch {
   position: relative;
   display: inline-block;
