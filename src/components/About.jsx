@@ -1,10 +1,13 @@
 import img from '../assets/images/bitmojime.png';
+import { useTheme } from './ThemeContext';
+
 
 export default function About() {
+  const { theme } = useTheme();
 
   return (
     <section className="about">
-      <h2 className='page-header'>About Me</h2>
+      <h2 className={`page-header page-header-${theme}`}>About Me</h2>
       <div>
         <div className='bio-img'>
           <img src={img} />

@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react';
 import { send } from 'emailjs-com';
+import { useTheme } from './ThemeContext';
 
 const serviceID = import.meta.env.VITE_serviceID;
 const templateID = import.meta.env.VITE_templateID;
 const publicKey = import.meta.env.VITE_publicKey;
 
 const Notification = () => {
-
   const [show, setShow] = useState(true);
 
   useEffect(() => {
@@ -36,6 +36,7 @@ const Notification = () => {
 }
 
 export default function Contact() {
+  const { theme } = useTheme();
   const [toSend, setToSend] = useState({
     from_name: '',
     message: '',
@@ -84,7 +85,7 @@ export default function Contact() {
 
   return (
     <section id='contact' className='contact'>
-      <h2 className='page-header'>Contact Me</h2>
+      <h2 className={`page-header page-header-${theme}`}>Contact Me</h2>
       {/* Send confirmation message */}
       {isSent && <Notification />}
       <form onSubmit={handleSubmit}>
@@ -98,6 +99,7 @@ export default function Contact() {
         />
         <input
           type='text'
+          className={theme === 'light' ? 'contact__input--light' : ''}
           name='from_name'
           required
           placeholder='Your name'
@@ -106,6 +108,7 @@ export default function Contact() {
         />
         <input
           type='text'
+          className={theme === 'light' ? 'contact__input--light' : ''}
           name='reply_to'
           required
           placeholder='Your email'
@@ -114,6 +117,7 @@ export default function Contact() {
         />
         <textarea
           name='message'
+          className={theme === 'light' ? 'contact__input--light' : ''}
           placeholder='Your message'
           required
           rows={8}
