@@ -16,6 +16,7 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
   --navbar-height: 60px;
+  --light: #dadfe2;
 }
 
 body {
@@ -580,7 +581,7 @@ body.light {
 }
 
 .contact__input--light {
-  background-color: #dadfe2;
+  background-color: var(--light);
   color: black;
 }
 
@@ -593,7 +594,7 @@ body.light {
 
 .react-logo-light,
 .vite-logo-light {
-  color: #dadfe2;
+  color: var(--light);
   cursor: pointer;
   width: 1em;
   margin: 0 0.5em;
