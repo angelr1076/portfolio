@@ -16,6 +16,7 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
   --navbar-height: 60px;
+  --light: #dadfe2;
 }
 
 body {
@@ -533,7 +534,77 @@ button:active {
   }
 }
 
+<<<<<<< HEAD
 @media (prefers-color-scheme: light) {
+=======
+body.dark {
+  background-color: #242424;
+  color: white;
+}
+
+body.light {
+  background-color: white;
+  color: black;
+}
+
+.navbar-light {
+  background-color: white;
+  color: black;
+}
+
+.nav-link-light {
+  color: black;
+}
+
+.nav-link-light:hover {
+  border-bottom: 2px solid rgba(59, 58, 58, 0.87);
+}
+
+.nav-link-light.active {
+  border-bottom: 2px solid rgba(38, 38, 38, 0.87);
+}
+
+.page-header-dark::before,
+.page-header-dark::after {
+  border-bottom: 1px solid #eff2f4;
+}
+
+.page-header-light::before,
+.page-header-light::after {
+  border-bottom: 1px solid black;
+}
+
+.resume__img--light {
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.resume__img--dark {
+  width: 100%;
+}
+
+.contact__input--light {
+  background-color: var(--light);
+  color: black;
+}
+
+.react-logo,
+.vite-logo {
+  cursor: pointer;
+  width: 1em;
+  margin: 0 0.5em;
+}
+
+.react-logo-light,
+.vite-logo-light {
+  color: var(--light);
+  cursor: pointer;
+  width: 1em;
+  margin: 0 0.5em;
+}
+
+@media (prefers-color-scheme: dark) {
+>>>>>>> light-dark-toggle
   :root {
     color: #213547;
     background-color: #ffffff;
