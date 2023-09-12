@@ -36,7 +36,7 @@ export default function Navbar() {
             <li className='nav-item'>
               <Link
                 activeClass="active"
-                className={`nav-link ${theme === 'light' ? 'nav-link-light' : ''}${landingActive ? 'active' : 'nav-link'}`}
+                className={`nav-link ${theme === 'light' ? 'nav-link-light' : ''}`}
                 to="landing"
                 spy={true}
                 smooth={true}
