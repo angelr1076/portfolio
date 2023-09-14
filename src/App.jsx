@@ -20,8 +20,8 @@ function App() {
         <Resume />
         <Contact />
         <ScrollToTop />
-        <Footer />
       </main>
+        <Footer />
     </ThemeProvider>
   );
 }
