@@ -229,9 +229,14 @@ input:checked + .slider:before {
 }
 
 .landing__header > h1 {
-  font-size: 3.5em;
-  font-weight: 600;
+  font-size: 4em;
+  font-weight: 900;
   margin-bottom: 0.5em;
+}
+
+.landing__header > h2 {
+  font-size: 2em;
+  font-weight: 900;
 }
 
 .landing,
@@ -352,7 +357,7 @@ textarea {
 input,
 textarea,
 button {
-  padding: 0.8em;
+  padding: 0.9em;
   border: none;
   border-radius: 4px;
   font-size: 1em;
