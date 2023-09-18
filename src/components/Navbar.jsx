@@ -74,7 +74,7 @@ export default function Navbar() {
             <li className='nav-item'>
               <div className="theme-switch-wrapper">
                 <div className="theme-switch-container">
-                  <BsMoonStars className="theme-icon theme-icon-left" style={{ color: theme === 'dark' ? null : 'white' }} />
+                  <BsMoonStars className={theme === 'light' ? 'moon-icon light-mode' : 'moon-icon dark-mode'} style={{ color: theme === 'dark' ? null : 'white' }} />
                   <label className="theme-switch">
                     <input 
                       type="checkbox"

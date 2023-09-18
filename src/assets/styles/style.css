@@ -190,13 +190,22 @@ hr {
 }
 
 .sun-icon.light-mode {
-  right: calc(100% - 5000px);
-  position: absolute;
+  display: none;
 }
 
 .sun-icon.dark-mode {
   right: 0;
   position: absolute;
+}
+
+.moon-icon.light-mode {
+  left: 0;
+  position: absolute;
+  z-index: 1000;
+}
+
+.moon-icon.dark-mode {
+  display: none;
 }
 
 .theme-switch-container {
@@ -210,13 +219,13 @@ hr {
   z-index: 2;
 }
 
-.theme-icon-left {
+/* .theme-icon-left {
   left: 0;
-}
+} */
 
-.theme-icon-right {
+/* .theme-icon-right {
   right: 0;
-}
+} */
 
 .theme-switch {
   position: relative;
