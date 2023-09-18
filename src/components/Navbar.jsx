@@ -29,7 +29,7 @@ export default function Navbar() {
           aria-label='Toggle navigation'
           onClick={toggleMenu}
         >
-          <span className='navbar-toggler-icon'></span>
+          <span className={`navbar-toggler-icon ${menuOpen ? 'open' : ''}`}></span>
         </button>
         <div className={`collapse navbar-collapse ${menuOpen ? 'show' : ''}`} id='navbarNav'>
           <ul className='navbar-nav'>
