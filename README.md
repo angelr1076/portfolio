@@ -1,4 +1,5 @@
 # Portfolio Site
+
 <div style="display: flex; justify-content: space-between;">
   <div>
   
@@ -12,7 +13,8 @@
   </div>
 </div>
 
-![Homepage image](./src/assets/images/portfolio-image.png 'Screenshot of portfolio homepage')
+![Homepage image dark](./src/assets/images/portfolio-dark.png 'Screenshot of portfolio homepage default')
+![Homepage image light](./src/assets/images/portfolio-light.png 'Screenshot of portfolio homepage light')
 
 angelrod.dev is built using React and showcases my projects, skills, and experience as an app developer. It features several sections including a landing, about, projects, resume, and contact section.
 
