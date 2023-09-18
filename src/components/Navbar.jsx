@@ -73,17 +73,18 @@ export default function Navbar() {
             </li>
             <li className='nav-item'>
               <div className="theme-switch-wrapper">
-                <BsMoonStars />
-                <label className="theme-switch">
-                  <input 
-                    type="checkbox"
-                    checked={theme === 'light'}
-                    onChange={toggleTheme}
-                  />
-                  <div className="slider round">
-                  </div>
-                </label>
-                <BsSun />
+                <div className="theme-switch-container">
+                  <BsMoonStars className="theme-icon theme-icon-left" style={{ color: theme === 'dark' ? null : 'white' }} />
+                  <label className="theme-switch">
+                    <input 
+                      type="checkbox"
+                      checked={theme === 'light'}
+                      onChange={toggleTheme}
+                    />
+                    <div className="slider round"></div>
+                  </label>
+                  <BsSun className={theme === 'light' ? 'sun-icon light-mode' : 'sun-icon dark-mode'} style={{ color: theme === 'dark' ? 'black' : null }}/>
+                </div>
               </div>
             </li>
           </ul>

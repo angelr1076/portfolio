@@ -178,15 +178,44 @@ hr {
   bottom: -10px;
 }
 
-/* Toggle Switch */
+/* Light/Dark Toggle Switch */
 .theme-switch-wrapper {
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .theme-switch-wrapper svg {
   margin: 0 10px;
+  pointer-events: none;
+}
+
+.sun-icon.light-mode {
+  right: calc(100% - 5000px);
+  position: absolute;
+}
+
+.sun-icon.dark-mode {
+  right: 0;
+  position: absolute;
+}
+
+.theme-switch-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.theme-icon {
+  position: absolute;
+  z-index: 2;
+}
+
+.theme-icon-left {
+  left: 0;
+}
+
+.theme-icon-right {
+  right: 0;
 }
 
 .theme-switch {
