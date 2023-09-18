@@ -51,7 +51,7 @@ export default function ProjectCard({title, description, image, live, github, bu
             title='Live site'
             onClick={handleClick}
             >
-              <CgWebsite />
+              <CgWebsite style={{ height: '1.5em', width: '1.5em' }}/>
           </button>
           <button 
             className='btn github' 
@@ -61,7 +61,7 @@ export default function ProjectCard({title, description, image, live, github, bu
             title='Github repo'
             onClick={handleClick}
             >
-              <BsGithub />
+              <BsGithub style={{ height: '1.5em', width: '1.5em' }}/>
           </button>
         </div>
       </div>
