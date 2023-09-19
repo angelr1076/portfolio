@@ -1,4 +1,11 @@
 @import 'react-alice-carousel/lib/alice-carousel.css';
+@font-face {
+  font-family: Mija;
+  src: url('../fonts/MijaBold.otf') format('opentype'),
+    url('../fonts/MijaBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
 
 :root {
   font-family: Mija, -apple-system, BlinkMacSystemFont, Roboto, roboto slab,
@@ -219,14 +226,6 @@ hr {
   z-index: 2;
 }
 
-/* .theme-icon-left {
-  left: 0;
-} */
-
-/* .theme-icon-right {
-  right: 0;
-} */
-
 .theme-switch {
   position: relative;
   display: inline-block;
@@ -373,6 +372,7 @@ input:checked + .slider:before {
 .description {
   font-size: 0.9em;
   font-weight: 400;
+  line-height: 1.25;
 }
 
 button {
@@ -527,7 +527,7 @@ button:active {
 }
 
 .react-logo,
-.vite-logo {
+.font-logo {
   cursor: pointer;
   width: 1em;
   margin: 0 0.5em;
@@ -658,14 +658,14 @@ body.light {
 }
 
 .react-logo,
-.vite-logo {
+.font-logo {
   cursor: pointer;
   width: 1em;
   margin: 0 0.5em;
 }
 
 .react-logo-light,
-.vite-logo-light {
+.font-logo-light {
   color: var(--light);
   cursor: pointer;
   width: 1em;
