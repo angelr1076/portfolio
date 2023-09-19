@@ -14,6 +14,7 @@ export default function Navbar() {
 
   useEffect(() => {
     document.body.className = theme;
+     setLandingActive(true);
   }, [theme]);
 
   return (
@@ -36,7 +37,7 @@ export default function Navbar() {
             <li className='nav-item'>
               <Link
                 activeClass="active"
-                className={`nav-link ${theme === 'light' ? 'nav-link-light' : ''}`}
+                className={`nav-link ${landingActive ? 'active' : ''} ${theme === 'light' ? 'nav-link-light' : ''}`}  // <-- Here
                 to="landing"
                 spy={true}
                 smooth={true}
