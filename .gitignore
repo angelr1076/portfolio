@@ -1,6 +1,9 @@
 # Env files
 .env
 
+# Time tracking files
+*.timestamp
+
 # Logs
 logs
 *.log
