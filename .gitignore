@@ -2,7 +2,7 @@
 .env
 
 # Time tracking files
-*.timestamp
+vite.config.js.timestamp-*.mjs
 
 # Logs
 logs
