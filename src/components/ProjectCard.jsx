@@ -32,7 +32,7 @@ export default function ProjectCard({title, description, image, live, github, bu
       <img src={image} className='project-card__img'/>
         <div className='project-card__details-container'>
           <div className="project-card__header-container">
-            <h3 className='title'>{title}</h3> 
+            <h3 className='title' style={{ textDecoration: 'underline'}}>{title}</h3> 
             <div className="built-with-icons">
               {builtWith.map((icon, index) => (
                 <span style={{ marginRight: '0.8em'}} key={index}>
