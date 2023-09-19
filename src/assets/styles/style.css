@@ -420,6 +420,7 @@ textarea {
 input,
 textarea,
 button {
+  font-family: inherit;
   padding: 0.9em;
   border: none;
   border-radius: 4px;
