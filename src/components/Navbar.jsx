@@ -14,7 +14,6 @@ export default function Navbar() {
 
   useEffect(() => {
     document.body.className = theme;
-    setLandingActive(true);
   }, [theme]);
 
   return (
