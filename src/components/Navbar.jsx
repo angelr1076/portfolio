@@ -74,7 +74,7 @@ export default function Navbar() {
             <li className='nav-item'>
               <div className="theme-switch-wrapper">
                 <div className="theme-switch-container">
-                  <BsMoonStars className={theme === 'light' ? 'moon-icon light-mode' : 'moon-icon dark-mode'} style={{ color: theme === 'dark' ? null : 'white' }} />
+                  <BsMoonStars className={theme === 'light' ? 'moon-icon light-mode' : 'moon-icon dark-mode'} style={{ color: theme === 'dark' ? 'black' : null }} />
                   <label className="theme-switch">
                     <input 
                       type="checkbox"
@@ -83,7 +83,7 @@ export default function Navbar() {
                     />
                     <div className="slider round"></div>
                   </label>
-                  <BsSun className={theme === 'light' ? 'sun-icon light-mode' : 'sun-icon dark-mode'} style={{ color: theme === 'dark' ? 'black' : null }}/>
+                  <BsSun className={theme === 'light' ? 'sun-icon light-mode' : 'sun-icon dark-mode'} style={{ color: theme === 'light' ? 'white' : null }}/>
                 </div>
               </div>
             </li>
