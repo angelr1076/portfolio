@@ -24,6 +24,7 @@
   -webkit-text-size-adjust: 100%;
   --navbar-height: 60px;
   --light: #dadfe2;
+  --dark: #242424;
 }
 
 body {
@@ -621,17 +622,17 @@ body.dark {
 }
 
 body.light {
-  background-color: white;
-  color: black;
+  background-color: var(--white);
+  color: var(--dark);
 }
 
 .navbar-light {
-  background-color: white;
-  color: black;
+  background-color: var(--white);
+  color: var(--dark);
 }
 
 .nav-link-light {
-  color: black;
+  color: var(--dark);
 }
 
 .nav-link-light:hover {
