@@ -24,7 +24,7 @@
   -webkit-text-size-adjust: 100%;
   --navbar-height: 60px;
   --light: #dadfe2;
-  --dark: #242424;
+  --dark: #33332d;
 }
 
 body {
@@ -98,7 +98,7 @@ hr {
   position: sticky;
   top: 0;
   width: 100%;
-  background-color: #242424;
+  background-color: var(--dark);
   opacity: 0.9;
   z-index: 1000;
 }
@@ -617,8 +617,8 @@ button:active {
 }
 
 body.dark {
-  background-color: #242424;
-  color: white;
+  background-color: var(--dark);
+  color: var(--light);
 }
 
 body.light {
