@@ -610,7 +610,6 @@ body.light {
 }
 
 /* Media Queries */
-
 @media (max-width: 500px) {
   .project-card {
     flex-direction: column;
