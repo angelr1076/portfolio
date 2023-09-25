@@ -25,11 +25,11 @@
   --navbar-height: 60px;
   --light: #dadfe2;
   --dark: #242424;
+  --footer-dark: #444343;
 }
 
 body {
   margin: 0 auto;
-  padding: 0 1em;
 }
 
 html {
@@ -53,6 +53,7 @@ a {
 
 /* Main container  */
 .main {
+  padding: 0 1em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -106,6 +107,7 @@ hr {
 .navbar-nav {
   list-style-type: none;
   padding: 0;
+
   display: flex;
   align-items: center;
 }
@@ -135,6 +137,7 @@ hr {
   border: none;
   outline: none;
   display: none;
+  border-radius: 0;
 }
 
 .navbar-toggler-icon {
@@ -492,8 +495,7 @@ button:active {
 
 .footer {
   margin-top: 1rem;
-  /* background-color: #43d55c; */
-  background-color: #444343;
+  background-color: var(--footer-dark);
   position: fixed;
   bottom: 0;
   left: 0;
@@ -527,7 +529,8 @@ button:active {
   }
 }
 
-.react-logo {
+.react-logo,
+.react-logo-light {
   animation: rotate 4s linear infinite;
 }
 
@@ -537,6 +540,75 @@ button:active {
   width: 1em;
   margin: 0 0.5em;
 }
+
+/* Dark/Light Themes */
+body.dark {
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+body.light {
+  background-color: var(--white);
+  color: var(--dark);
+}
+
+.navbar-light {
+  background-color: var(--white);
+  color: var(--dark);
+}
+
+.nav-link-light {
+  color: var(--dark);
+}
+
+.nav-link-light:hover {
+  border-bottom: 2px solid rgba(59, 58, 58, 0.87);
+}
+
+.nav-link-light.active {
+  border-bottom: 2px solid rgba(38, 38, 38, 0.87);
+}
+
+.page-header-dark::before,
+.page-header-dark::after {
+  border-bottom: 1px solid #eff2f4;
+}
+
+.page-header-light::before,
+.page-header-light::after {
+  border-bottom: 1px solid black;
+}
+
+.resume__img--light {
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.resume__img--dark {
+  width: 100%;
+}
+
+.contact__input--light {
+  background-color: var(--light);
+  color: black;
+}
+
+.react-logo,
+.font-logo {
+  cursor: pointer;
+  width: 1em;
+  margin: 0 0.5em;
+}
+
+.react-logo-light,
+.font-logo-light {
+  color: var(--light);
+  cursor: pointer;
+  width: 1em;
+  margin: 0 0.5em;
+}
+
+/* Media Queries */
 
 @media (max-width: 500px) {
   .project-card {
@@ -614,72 +686,6 @@ button:active {
   .about > div:first-child {
     padding-right: 0;
   }
-}
-
-body.dark {
-  background-color: var(--dark);
-  color: var(--light);
-}
-
-body.light {
-  background-color: var(--white);
-  color: var(--dark);
-}
-
-.navbar-light {
-  background-color: var(--white);
-  color: var(--dark);
-}
-
-.nav-link-light {
-  color: var(--dark);
-}
-
-.nav-link-light:hover {
-  border-bottom: 2px solid rgba(59, 58, 58, 0.87);
-}
-
-.nav-link-light.active {
-  border-bottom: 2px solid rgba(38, 38, 38, 0.87);
-}
-
-.page-header-dark::before,
-.page-header-dark::after {
-  border-bottom: 1px solid #eff2f4;
-}
-
-.page-header-light::before,
-.page-header-light::after {
-  border-bottom: 1px solid black;
-}
-
-.resume__img--light {
-  width: 100%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.resume__img--dark {
-  width: 100%;
-}
-
-.contact__input--light {
-  background-color: var(--light);
-  color: black;
-}
-
-.react-logo,
-.font-logo {
-  cursor: pointer;
-  width: 1em;
-  margin: 0 0.5em;
-}
-
-.react-logo-light,
-.font-logo-light {
-  color: var(--light);
-  cursor: pointer;
-  width: 1em;
-  margin: 0 0.5em;
 }
 
 @media (prefers-color-scheme: dark) {

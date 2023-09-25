@@ -11,8 +11,8 @@ import { ThemeProvider } from './components/ThemeContext';
 function App() {
   return (
     <ThemeProvider>
-      <main className='main'>
         <Navbar />
+      <main className='main'>
         <Landing />
         <About />
         <Projects />
