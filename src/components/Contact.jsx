@@ -124,7 +124,7 @@ export default function Contact() {
           value={toSend.message}
           onChange={handleChange}
         />
-        <button type='submit'>Submit</button>
+        <button type='submit'>Send</button>
       </form>
     </section>
   );
