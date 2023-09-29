@@ -16,6 +16,22 @@ export default function Navbar() {
     document.body.className = theme;
   }, [theme]);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY < 100) { 
+        setLandingActive(true);
+      } else {
+        setLandingActive(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <>
       <nav id='navbar' className={`navbar ${theme === 'light' ? 'navbar-light' : ''}`}>
@@ -36,7 +52,7 @@ export default function Navbar() {
             <li className='nav-item'>
               <Link
                 activeClass="active"
-                className={`nav-link ${theme === 'light' ? 'nav-link-light' : ''}`}  // <-- Here
+                className={`nav-link ${landingActive ? 'active' : ''} ${theme === 'light' ? 'nav-link-light' : ''}`} 
                 to="landing"
                 spy={true}
                 smooth={true}
