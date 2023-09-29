@@ -12,13 +12,13 @@ export default function Navbar() {
     setMenuOpen(!menuOpen);
   };
 
-  useEffect(() => {
+  useEffect(function setTheme() {
     document.body.className = theme;
   }, [theme]);
 
-  useEffect(() => {
+  useEffect(function detectTopOfPage() {
     const handleScroll = () => {
-      if (window.scrollY < 100) { 
+      if (window.scrollY < 10) { 
         setLandingActive(true);
       } else {
         setLandingActive(false);
