@@ -24,6 +24,7 @@
   -webkit-text-size-adjust: 100%;
   --navbar-height: 60px;
   --light: #dadfe2;
+  --transparent-light: #fefefe;
   --dark: #242424;
   --nav-light: #f1f4f7;
   --footer-dark: #444343;
@@ -553,7 +554,7 @@ body.light {
 }
 
 .navbar-light {
-  background-color: var(--light);
+  background-color: var(--transparent-light);
   color: var(--dark);
 }
 
