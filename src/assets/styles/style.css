@@ -336,12 +336,12 @@ input:checked + .slider:before {
 }
 
 .project-card {
+  margin: 0 auto;
   max-width: 500px;
-  display: block;
 }
 
 .project-card__img {
-  max-width: 400px;
+  max-width: 500px;
 }
 
 .project-card__details-container {
