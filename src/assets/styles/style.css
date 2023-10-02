@@ -24,6 +24,7 @@
   -webkit-text-size-adjust: 100%;
   --navbar-height: 60px;
   --light: #dadfe2;
+  --pop-green: #43d55c;
   --transparent-light: #fefefe;
   --dark: #242424;
   --nav-light: #f1f4f7;
@@ -111,9 +112,13 @@ hr {
   list-style-type: none;
   padding: 0;
   margin: 0;
-
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.link-container {
+  display: flex;
 }
 
 .nav-item {
@@ -147,7 +152,6 @@ hr {
   display: inline-block;
   width: 30px;
   height: 4px;
-  background-color: #333;
   position: relative;
 }
 
@@ -157,7 +161,7 @@ hr {
 
 .navbar-toggler-icon.open::before,
 .navbar-toggler-icon.open::after {
-  background-color: #333;
+  background-color: var(--nav-light);
   top: 0;
 }
 
@@ -173,6 +177,7 @@ hr {
 .navbar-toggler-icon::before,
 .navbar-toggler-icon::after {
   transition: all 0.3s ease-in-out;
+  background-color: var(--nav-light);
 }
 
 .navbar-toggler-icon::before,
@@ -182,7 +187,7 @@ hr {
   left: 0;
   width: 100%;
   height: 4px;
-  background-color: #333;
+  background-color: var(--nav-light);
 }
 
 .navbar-toggler-icon::before {
@@ -196,6 +201,7 @@ hr {
 /* Light/Dark Toggle Switch */
 .theme-switch-wrapper {
   display: flex;
+  margin-right: 10px;
 }
 
 .theme-switch-wrapper svg {
@@ -430,7 +436,7 @@ textarea:focus {
 
 button {
   color: #ffffff;
-  background-color: #43d55c;
+  background-color: var(--pop-green);
   cursor: pointer;
   border-radius: 3px;
   transform: scale(1);
@@ -457,7 +463,7 @@ button:hover {
 }
 
 .icon-style {
-  background-color: var(--plum);
+  background-color: var(--pop-green);
   border: 2px solid #fff;
   border-radius: 50%;
   height: 50px;
@@ -471,8 +477,8 @@ button:hover {
 .icon-style:hover {
   animation: none;
   background: #fff;
-  color: var(--plum);
-  border: 2px solid var(--plum);
+  color: var(--pop-green);
+  border: 2px solid var(--pop-green);
 }
 
 @keyframes movebtn {
@@ -647,7 +653,8 @@ body.light {
     opacity: 1;
   }
 
-  .navbar-nav {
+  .navbar-nav,
+  .link-container {
     flex-direction: column;
     align-items: flex-start;
     width: 100%;

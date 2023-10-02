@@ -49,44 +49,46 @@ export default function Navbar() {
         </button>
         <div className={`collapse navbar-collapse ${menuOpen ? 'show' : ''}`} id='navbarNav'>
           <ul className='navbar-nav'>
-            <li className='nav-item'>
-              <Link
-                activeClass="active"
-                className={`nav-link ${landingActive ? 'active' : ''} ${theme === 'light' ? 'nav-link-light' : ''}`} 
-                to="landing"
-                spy={true}
-                smooth={true}
-                offset={-50}  
-                duration={500}
-                onSetActive={() => setLandingActive(true)}
-                onSetInactive={() => setLandingActive(false)}> 
-                Home
+            <div className="link-container">
+              <li className='nav-item'>
+                <Link
+                  activeClass="active"
+                  className={`nav-link ${landingActive ? 'active' : ''} ${theme === 'light' ? 'nav-link-light' : ''}`} 
+                  to="landing"
+                  spy={true}
+                  smooth={true}
+                  offset={-50}  
+                  duration={500}
+                  onSetActive={() => setLandingActive(true)}
+                  onSetInactive={() => setLandingActive(false)}> 
+                  Home
+                </Link>
+              </li>
+              <li className='nav-item'>
+                <Link
+                  className={`nav-link ${theme === 'light' ? 'nav-link-light' : ''}`} to='about' spy={true} smooth={true} duration={500}>
+                  About
+                </Link>
+              </li>
+              <li className='nav-item'>
+                <Link
+                  className={`nav-link ${theme === 'light' ? 'nav-link-light' : ''}`} to='projects' spy={true} smooth={true} duration={500}>
+                  Projects
+                </Link>
+              </li>
+              <li className='nav-item'>
+                <Link
+                  className={`nav-link ${theme === 'light' ? 'nav-link-light' : ''}`} to='resume' spy={true} smooth={true} duration={500}>
+                Resume
               </Link>
-            </li>
-            <li className='nav-item'>
-              <Link
-                className={`nav-link ${theme === 'light' ? 'nav-link-light' : ''}`} to='about' spy={true} smooth={true} duration={500}>
-                About
+              </li>
+              <li className='nav-item'>
+                <Link
+                  className={`nav-link ${theme === 'light' ? 'nav-link-light' : ''}`} to='contact' spy={true} smooth={true} duration={500}>
+                Contact
               </Link>
-            </li>
-            <li className='nav-item'>
-              <Link
-                className={`nav-link ${theme === 'light' ? 'nav-link-light' : ''}`} to='projects' spy={true} smooth={true} duration={500}>
-                Projects
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link
-                className={`nav-link ${theme === 'light' ? 'nav-link-light' : ''}`} to='resume' spy={true} smooth={true} duration={500}>
-              Resume
-            </Link>
-            </li>
-            <li className='nav-item'>
-              <Link
-                className={`nav-link ${theme === 'light' ? 'nav-link-light' : ''}`} to='contact' spy={true} smooth={true} duration={500}>
-              Contact
-            </Link>
-            </li>
+              </li>
+            </div>
             <li className='nav-item'>
               <div className="theme-switch-wrapper">
                 <div className="theme-switch-container">
