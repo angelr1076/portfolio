@@ -11,7 +11,7 @@ import { ThemeProvider } from './components/ThemeContext';
 function App() {
   return (
     <ThemeProvider>
-        <Navbar />
+      <Navbar />
       <main className='main'>
         <Landing />
         <About />
@@ -20,7 +20,7 @@ function App() {
         <Contact />
         <ScrollToTop />
       </main>
-        <Footer />
+      <Footer />
     </ThemeProvider>
   );
 }

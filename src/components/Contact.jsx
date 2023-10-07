@@ -11,7 +11,7 @@ const Notification = () => {
 
   useEffect(() => {
     const timeout = setTimeout(() => {
-      setShow(false); 
+      setShow(false);
     }, 3000);
 
     return () => clearTimeout(timeout);
@@ -19,33 +19,35 @@ const Notification = () => {
 
   return (
     <>
-      {show && 
-        <div className="notification" style={{
-          backgroundColor: '#43d55c',
-          color: 'white',
-          padding: '8px 16px',
-          marginBottom: '16px',
-          borderRadius: '4px',
-          textAlign: 'center'
-        }}>
+      {show && (
+        <div
+          className='notification'
+          style={{
+            backgroundColor: '#43d55c',
+            color: 'white',
+            padding: '8px 16px',
+            marginBottom: '16px',
+            borderRadius: '4px',
+            textAlign: 'center',
+          }}>
           Message sent! Thank you!
-        </div>  
-      }
+        </div>
+      )}
     </>
   );
-}
+};
 
 export default function Contact() {
   const { theme } = useTheme();
   const [toSend, setToSend] = useState({
     from_name: '',
     message: '',
-    reply_to: '' 
+    reply_to: '',
   });
 
   const [isSent, setIsSent] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = e => {
     e.preventDefault();
 
     if (!toSend.from_name || !toSend.reply_to || !toSend.message) {
@@ -54,32 +56,27 @@ export default function Contact() {
       return;
     }
 
-      send(
-        serviceID,
-        templateID,
-        toSend,
-        publicKey,
-      )
-        .then((response) => {
-          console.log('SUCCESS!', response.status, response.text);
-          setIsSent(true);
-          // Clear form
-          e.target.reset();
-      
-          setToSend({
-            from_name: '',
-            message: '',
-            reply_to: ''
-          });
-        })
-        .catch((err) => {
-          console.log('FAILED...', err);
-        });
-      
-      e.target.reset();
-  }
+    send(serviceID, templateID, toSend, publicKey)
+      .then(response => {
+        console.log('SUCCESS!', response.status, response.text);
+        setIsSent(true);
+        // Clear form
+        e.target.reset();
 
-  const handleChange = (e) => {
+        setToSend({
+          from_name: '',
+          message: '',
+          reply_to: '',
+        });
+      })
+      .catch(err => {
+        console.log('FAILED...', err);
+      });
+
+    e.target.reset();
+  };
+
+  const handleChange = e => {
     setToSend({ ...toSend, [e.target.name]: e.target.value });
   };
 

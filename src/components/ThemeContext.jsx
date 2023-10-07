@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 export const ThemeContext = createContext();
 
-export function ThemeProvider ({ children }) {
+export function ThemeProvider({ children }) {
   const [theme, setTheme] = useState(
     window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
   );
@@ -19,7 +19,7 @@ export function ThemeProvider ({ children }) {
   );
 }
 
-export function useTheme () {
+export function useTheme() {
   return useContext(ThemeContext);
 }
 

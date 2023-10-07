@@ -1,24 +1,27 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 import { useTheme } from './ThemeContext';
-import { BsSun, BsMoonStars } from "react-icons/bs";
+import { BsSun, BsMoonStars } from 'react-icons/bs';
 
 export default function Navbar() {
-  const [menuOpen, setMenuOpen] = useState(false); 
+  const [menuOpen, setMenuOpen] = useState(false);
   const [landingActive, setLandingActive] = useState(true);
   const { theme, toggleTheme } = useTheme();
-  
-  const toggleMenu = () => { 
+
+  const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
-  useEffect(function setTheme() {
-    document.body.className = theme;
-  }, [theme]);
+  useEffect(
+    function setTheme() {
+      document.body.className = theme;
+    },
+    [theme]
+  );
 
   useEffect(function detectTopOfPage() {
     const handleScroll = () => {
-      if (window.scrollY < 10) { 
+      if (window.scrollY < 10) {
         setLandingActive(true);
       } else {
         setLandingActive(false);
@@ -34,7 +37,9 @@ export default function Navbar() {
 
   return (
     <>
-      <nav id='navbar' className={`navbar ${theme === 'light' ? 'navbar-light' : ''}`}>
+      <nav
+        id='navbar'
+        className={`navbar ${theme === 'light' ? 'navbar-light' : ''}`}>
         <button
           className='navbar-toggler'
           type='button'
@@ -43,65 +48,107 @@ export default function Navbar() {
           aria-controls='navbarNav'
           aria-expanded='false'
           aria-label='Toggle navigation'
-          onClick={toggleMenu}
-        >
-          <span className={`navbar-toggler-icon ${menuOpen ? 'open' : ''}`}></span>
+          onClick={toggleMenu}>
+          <span
+            className={`navbar-toggler-icon ${menuOpen ? 'open' : ''}`}></span>
         </button>
-        <div className={`collapse navbar-collapse ${menuOpen ? 'show' : ''}`} id='navbarNav'>
+        <div
+          className={`collapse navbar-collapse ${menuOpen ? 'show' : ''}`}
+          id='navbarNav'>
           <ul className='navbar-nav'>
-            <div className="link-container">
+            <div className='link-container'>
               <li className='nav-item'>
                 <Link
-                  activeClass="active"
-                  className={`nav-link ${landingActive ? 'active' : ''} ${theme === 'light' ? 'nav-link-light' : ''}`} 
-                  to="landing"
+                  activeClass='active'
+                  className={`nav-link ${landingActive ? 'active' : ''} ${
+                    theme === 'light' ? 'nav-link-light' : ''
+                  }`}
+                  to='landing'
                   spy={true}
                   smooth={true}
-                  offset={-50}  
+                  offset={-50}
                   duration={500}
                   onSetActive={() => setLandingActive(true)}
-                  onSetInactive={() => setLandingActive(false)}> 
+                  onSetInactive={() => setLandingActive(false)}>
                   Home
                 </Link>
               </li>
               <li className='nav-item'>
                 <Link
-                  className={`nav-link ${theme === 'light' ? 'nav-link-light' : ''}`} to='about' spy={true} smooth={true} duration={500}>
+                  className={`nav-link ${
+                    theme === 'light' ? 'nav-link-light' : ''
+                  }`}
+                  to='about'
+                  spy={true}
+                  smooth={true}
+                  duration={500}>
                   About
                 </Link>
               </li>
               <li className='nav-item'>
                 <Link
-                  className={`nav-link ${theme === 'light' ? 'nav-link-light' : ''}`} to='projects' spy={true} smooth={true} duration={500}>
+                  className={`nav-link ${
+                    theme === 'light' ? 'nav-link-light' : ''
+                  }`}
+                  to='projects'
+                  spy={true}
+                  smooth={true}
+                  duration={500}>
                   Projects
                 </Link>
               </li>
               <li className='nav-item'>
                 <Link
-                  className={`nav-link ${theme === 'light' ? 'nav-link-light' : ''}`} to='resume' spy={true} smooth={true} duration={500}>
-                Resume
-              </Link>
+                  className={`nav-link ${
+                    theme === 'light' ? 'nav-link-light' : ''
+                  }`}
+                  to='resume'
+                  spy={true}
+                  smooth={true}
+                  duration={500}>
+                  Resume
+                </Link>
               </li>
               <li className='nav-item'>
                 <Link
-                  className={`nav-link ${theme === 'light' ? 'nav-link-light' : ''}`} to='contact' spy={true} smooth={true} duration={500}>
-                Contact
-              </Link>
+                  className={`nav-link ${
+                    theme === 'light' ? 'nav-link-light' : ''
+                  }`}
+                  to='contact'
+                  spy={true}
+                  smooth={true}
+                  duration={500}>
+                  Contact
+                </Link>
               </li>
             </div>
             <li className='nav-item'>
-              <div className="theme-switch-wrapper">
-                <div className="theme-switch-container">
-                  <BsMoonStars className={theme === 'light' ? 'moon-icon light-mode' : 'moon-icon dark-mode'} style={{ color: theme === 'dark' ? 'black' : null }} />
-                  <label className="theme-switch">
-                    <input 
-                      type="checkbox"
+              <div className='theme-switch-wrapper'>
+                <div className='theme-switch-container'>
+                  <BsMoonStars
+                    className={
+                      theme === 'light'
+                        ? 'moon-icon light-mode'
+                        : 'moon-icon dark-mode'
+                    }
+                    style={{ color: theme === 'dark' ? 'black' : null }}
+                  />
+                  <label className='theme-switch'>
+                    <input
+                      type='checkbox'
                       checked={theme === 'light'}
                       onChange={toggleTheme}
                     />
-                    <div className="slider round"></div>
+                    <div className='slider round'></div>
                   </label>
-                  <BsSun className={theme === 'light' ? 'sun-icon light-mode' : 'sun-icon dark-mode'} style={{ color: theme === 'light' ? 'white' : null }}/>
+                  <BsSun
+                    className={
+                      theme === 'light'
+                        ? 'sun-icon light-mode'
+                        : 'sun-icon dark-mode'
+                    }
+                    style={{ color: theme === 'light' ? 'white' : null }}
+                  />
                 </div>
               </div>
             </li>

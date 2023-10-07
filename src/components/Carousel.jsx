@@ -3,10 +3,9 @@ import 'react-alice-carousel/lib/alice-carousel.css';
 import ProjectCard from './ProjectCard';
 import projects from '../data/projectsList';
 
-
 const projectsMap = projects.map(project => {
   return (
-    <ProjectCard 
+    <ProjectCard
       key={project.key}
       title={project.title}
       builtWith={project.builtWith}
@@ -19,10 +18,5 @@ const projectsMap = projects.map(project => {
 });
 
 export default function Carousel() {
-  return (
-  <AliceCarousel 
-    items={projectsMap}
-    controlsStrategy="alternate" 
-  />
-  )
+  return <AliceCarousel items={projectsMap} controlsStrategy='alternate' />;
 }
