@@ -369,7 +369,7 @@ input:checked + .slider:before {
 
 .btn-container {
   display: flex;
-  gap: 3em;
+  gap: 2em;
 }
 
 .title {
