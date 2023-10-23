@@ -15,8 +15,8 @@ export default function Skills() {
           target='_blank'>
           <img
             className={`resume__img${theme === 'light' ? ' light' : ''}`}
-            // {`react-logo${theme === 'light' ? ' light' : ''}`}
             src={resume}
+            title='Click to view PDF'
           />
         </a>
       </div>
