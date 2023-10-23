@@ -14,6 +14,12 @@ export default function Navbar() {
 
   useEffect(
     function setTheme() {
+      const navbarElement = document.getElementById('navbar');
+      if (theme === 'light') {
+        navbarElement.style.setProperty('--navbar-bg-color', '#f1f4f7');
+      } else {
+        navbarElement.style.setProperty('--navbar-bg-color', '#242424');
+      }
       document.body.className = theme;
     },
     [theme]
@@ -37,9 +43,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav
-        id='navbar'
-        className={`navbar ${theme === 'light' ? 'navbar-light' : ''}`}>
+      <nav id='navbar' className={`navbar${theme === 'light' ? ' light' : ''}`}>
         <button
           className='navbar-toggler'
           type='button'
@@ -50,18 +54,20 @@ export default function Navbar() {
           aria-label='Toggle navigation'
           onClick={toggleMenu}>
           <span
-            className={`navbar-toggler-icon ${menuOpen ? 'open' : ''}`}></span>
+            className={`navbar-toggler-icon${menuOpen ? ' open' : ''}${
+              theme === 'light' ? ' light' : ''
+            }`}></span>
         </button>
         <div
-          className={`collapse navbar-collapse ${menuOpen ? 'show' : ''}`}
+          className={`collapse navbar-collapse${menuOpen ? ' show' : ''}`}
           id='navbarNav'>
           <ul className='navbar-nav'>
             <div className='link-container'>
               <li className='nav-item'>
                 <Link
                   activeClass='active'
-                  className={`nav-link ${landingActive ? 'active' : ''} ${
-                    theme === 'light' ? 'nav-link-light' : ''
+                  className={`nav-link${landingActive ? ' active' : ''} ${
+                    theme === 'light' ? ' light' : ''
                   }`}
                   to='landing'
                   spy={true}
@@ -75,9 +81,7 @@ export default function Navbar() {
               </li>
               <li className='nav-item'>
                 <Link
-                  className={`nav-link ${
-                    theme === 'light' ? 'nav-link-light' : ''
-                  }`}
+                  className={`nav-link${theme === 'light' ? ' light' : ''}`}
                   to='about'
                   spy={true}
                   smooth={true}
@@ -87,9 +91,7 @@ export default function Navbar() {
               </li>
               <li className='nav-item'>
                 <Link
-                  className={`nav-link ${
-                    theme === 'light' ? 'nav-link-light' : ''
-                  }`}
+                  className={`nav-link${theme === 'light' ? ' light' : ''}`}
                   to='projects'
                   spy={true}
                   smooth={true}
@@ -99,9 +101,7 @@ export default function Navbar() {
               </li>
               <li className='nav-item'>
                 <Link
-                  className={`nav-link ${
-                    theme === 'light' ? 'nav-link-light' : ''
-                  }`}
+                  className={`nav-link${theme === 'light' ? ' light' : ''}`}
                   to='resume'
                   spy={true}
                   smooth={true}
@@ -111,9 +111,7 @@ export default function Navbar() {
               </li>
               <li className='nav-item'>
                 <Link
-                  className={`nav-link ${
-                    theme === 'light' ? 'nav-link-light' : ''
-                  }`}
+                  className={`nav-link${theme === 'light' ? ' light' : ''}`}
                   to='contact'
                   spy={true}
                   smooth={true}

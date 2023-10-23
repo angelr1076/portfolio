@@ -14,9 +14,8 @@ export default function Skills() {
           rel='noreferrer'
           target='_blank'>
           <img
-            className={
-              theme === 'light' ? 'resume__img--light' : 'resume__img--dark'
-            }
+            className={`resume__img${theme === 'light' ? ' light' : ''}`}
+            // {`react-logo${theme === 'light' ? ' light' : ''}`}
             src={resume}
           />
         </a>

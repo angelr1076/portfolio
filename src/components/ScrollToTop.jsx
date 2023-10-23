@@ -1,9 +1,12 @@
 import { useState, useEffect } from 'react';
+import { useTheme } from './ThemeContext';
 import { FaAngleUp } from 'react-icons/fa';
 import '../assets/styles/style.css';
 
 export default function ScrollToTop() {
   const [showTopBtn, setShowTopBtn] = useState(false);
+  const { theme } = useTheme();
+
   useEffect(() => {
     window.addEventListener('scroll', () => {
       if (window.scrollY > 400) {
@@ -23,7 +26,12 @@ export default function ScrollToTop() {
     <div className='top-to-btm'>
       {' '}
       {showTopBtn && (
-        <FaAngleUp className='icon-position icon-style' onClick={goToTop} />
+        <FaAngleUp
+          className={`icon-position icon-style${
+            theme === 'light' ? ' light' : ''
+          }`}
+          onClick={goToTop}
+        />
       )}{' '}
     </div>
   );

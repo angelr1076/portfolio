@@ -1,4 +1,5 @@
 import '../assets/styles/style.css';
+import { useTheme } from './ThemeContext';
 import PropTypes from 'prop-types';
 import {
   SiJavascript,
@@ -43,6 +44,8 @@ export default function ProjectCard({
   github,
   builtWith,
 }) {
+  const { theme } = useTheme();
+
   return (
     <div className='project-card'>
       <img src={image} className='project-card__img' />
@@ -62,21 +65,23 @@ export default function ProjectCard({
         <p className='description'>{description}</p>
         <div className='btn-container'>
           <button
-            className='btn live'
+            className={`btn live${theme === 'light' ? ' light' : ''}`}
             rel='noreferrer'
             data-href={live}
             alt='Live site'
             title='Live site'
             onClick={handleClick}>
+            Live
             <CgWebsite style={{ height: '1.5em', width: '1.5em' }} />
           </button>
           <button
-            className='btn github'
+            className={`btn github${theme === 'light' ? ' light' : ''}`}
             rel='noreferrer'
             data-href={github}
             alt='Github repo'
             title='Github repo'
             onClick={handleClick}>
+            Github
             <BsGithub style={{ height: '1.5em', width: '1.5em' }} />
           </button>
         </div>

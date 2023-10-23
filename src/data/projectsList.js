@@ -1,17 +1,6 @@
 const projects = [
   {
     key: 1,
-    title: 'Case Crime Trace',
-    description:
-      'Case Crime Trace is my final project for CS50 Web. A Django-based app that lets users and law enforcement report and track crimes and suspects. Features include real-time updates, user-specific tracking, and a well-organized, modular codebase.',
-    image:
-      'https://res.cloudinary.com/angelrodriguez/image/upload/v1692116373/portfolio_2023/cct_screen.png',
-    live: 'https://cct.up.railway.app/',
-    github: 'https://github.com/angelr1076/django-cct',
-    builtWith: ['SiJavascript', 'SiPython', 'SiDjango'],
-  },
-  {
-    key: 2,
     title: 'Mibrary',
     description:
       "Django Mibrary is my final project for CS50, offering a platform where users can create profiles, manage books, and leave reviews. It integrates Bootstrap alerts with Django's built-in messaging, and leverages the Cloudinary API for image storage and ckeditor for rich-text book summaries.",
@@ -20,6 +9,17 @@ const projects = [
     live: 'https://mibrary.up.railway.app/',
     github: 'https://github.com/angelr1076/django-mibrary',
     builtWith: ['SiJavascript', 'SiPython', 'SiDjango'],
+  },
+  {
+    key: 5,
+    title: 'Battleship',
+    description:
+      'Battleship, just like the classic board-game, features a smart AI opponent, all built using best practices like factory functions and module bundling via Webpack and Jest testing.',
+    image:
+      'https://res.cloudinary.com/angelrodriguez/image/upload/v1692116373/portfolio_2023/battleship_screen.png',
+    live: 'https://battleship-boom.netlify.app/',
+    github: 'https://github.com/angelr1076/Battleship',
+    builtWith: ['SiJavascript', 'SiJest', 'SiBootstrap', 'SiWebpack'],
   },
   {
     key: 3,
@@ -33,6 +33,17 @@ const projects = [
     builtWith: ['SiJavascript', 'SiGooglemaps'],
   },
   {
+    key: 2,
+    title: 'Case Crime Trace',
+    description:
+      'Case Crime Trace is my final project for CS50 Web. A Django-based app that lets users and law enforcement report and track crimes and suspects. Features include real-time updates, user-specific tracking, and a well-organized, modular codebase.',
+    image:
+      'https://res.cloudinary.com/angelrodriguez/image/upload/v1692116373/portfolio_2023/cct_screen.png',
+    live: 'https://cct.up.railway.app/',
+    github: 'https://github.com/angelr1076/django-cct',
+    builtWith: ['SiJavascript', 'SiPython', 'SiDjango'],
+  },
+  {
     key: 4,
     title: "Knight's Travails",
     description:
@@ -42,17 +53,6 @@ const projects = [
     live: 'https://angelr1076.github.io/Knight-Travails/',
     github: 'https://github.com/angelr1076/Knight-Travails',
     builtWith: ['SiJavascript'],
-  },
-  {
-    key: 5,
-    title: 'Battleship',
-    description:
-      'Battleship, just like the classic board-game, features a smart AI opponent, all built using best practices like factory functions and module bundling via Webpack and Jest testing.',
-    image:
-      'https://res.cloudinary.com/angelrodriguez/image/upload/v1692116373/portfolio_2023/battleship_screen.png',
-    live: 'https://battleship-boom.netlify.app/',
-    github: 'https://github.com/angelr1076/Battleship',
-    builtWith: ['SiJavascript', 'SiJest', 'SiBootstrap', 'SiWebpack'],
   },
   {
     key: 6,
