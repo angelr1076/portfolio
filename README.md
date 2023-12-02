@@ -2,14 +2,9 @@
 
 <div style="display: flex; justify-content: space-between;">
   <div>
-  
- 
-  
   </div>
   <div>
-  
   <a href="https://angelrod.dev/" target="_blank">Live Site</a>
-  
   </div>
 </div>
 
