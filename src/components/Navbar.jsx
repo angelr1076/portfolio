@@ -123,7 +123,7 @@ export default function Navbar() {
             <li className='nav-item'>
               <div className='theme-switch-wrapper'>
                 <div className='theme-switch-container'>
-                  <BsMoonStars
+                  <BsSun
                     className={
                       theme === 'light'
                         ? 'moon-icon light-mode'
@@ -139,11 +139,11 @@ export default function Navbar() {
                     />
                     <div className='slider round'></div>
                   </label>
-                  <BsSun
+                  <BsMoonStars
                     className={
-                      theme === 'light'
-                        ? 'sun-icon light-mode'
-                        : 'sun-icon dark-mode'
+                      theme === 'dark'
+                        ? 'sun-icon dark-mode'
+                        : 'sun-icon light-mode'
                     }
                     style={{ color: theme === 'light' ? 'white' : null }}
                   />
