@@ -33,6 +33,28 @@ const projects = [
     builtWith: ['SiJavascript', 'SiGooglemaps'],
   },
   {
+    key: 7,
+    title: 'Map Sync Pro',
+    description:
+      'Map Sync Pro is designed to streamline the integration of user data with geospatial mapping. The tool combines the precision of mapping technologies with the complexity of user-specific data, providing an intuitive interface for geographic and demographic analysis.',
+    image:
+      'https://res.cloudinary.com/angelrodriguez/image/upload/v1703191479/portfolio_2023/mapsyncshot.png',
+    live: 'https://mapsyncpro.netlify.app/',
+    github: 'https://github.com/angelr1076/MapSyncPro',
+    builtWith: ['SiJavascript', 'SiHere'],
+  },
+  {
+    key: 8,
+    title: 'Poké Card',
+    description:
+      'This project is a modern, interactive memory card game built with React. It leverages the power of the Vite build tool. Designed to be both engaging and visually appealing, it offers a fun and challenging way to test and improve your memory.',
+    image:
+      'https://res.cloudinary.com/angelrodriguez/image/upload/v1703191515/portfolio_2023/pokecard.png',
+    live: 'https://pokecardmemory.netlify.app/',
+    github: 'https://github.com/angelr1076/MemoryCard',
+    builtWith: ['SiJavascript', 'FaReact'],
+  },
+  {
     key: 2,
     title: 'Case Crime Trace',
     description:

@@ -11,6 +11,7 @@ import {
   SiGooglemaps,
   SiPython,
   SiDjango,
+  SiHere,
 } from 'react-icons/si';
 import { BsGithub } from 'react-icons/bs';
 import { CgWebsite } from 'react-icons/cg';
@@ -35,6 +36,7 @@ const iconMap = {
   SiGooglemaps: <SiGooglemaps />,
   SiPython: <SiPython />,
   SiDjango: <SiDjango />,
+  SiHere: <SiHere />,
 };
 export default function ProjectCard({
   title,
