@@ -1,14 +1,14 @@
 const projects = [
   {
-    key: 1,
-    title: 'Mibrary',
+    key: 7,
+    title: 'Map Sync Pro',
     description:
-      "Django Mibrary is my final project for CS50, offering a platform where users can create profiles, manage books, and leave reviews. It integrates Bootstrap alerts with Django's built-in messaging, and leverages the Cloudinary API for image storage and ckeditor for rich-text book summaries.",
+      'Map Sync Pro is designed to streamline the integration of user data with geospatial mapping. The tool combines the precision of mapping technologies with the complexity of user-specific data, providing an intuitive interface for geographic and demographic analysis.',
     image:
-      'https://res.cloudinary.com/angelrodriguez/image/upload/v1692116373/portfolio_2023/mibrary_screen.png',
-    live: 'https://mibrary.up.railway.app/',
-    github: 'https://github.com/angelr1076/django-mibrary',
-    builtWith: ['SiJavascript', 'SiPython', 'SiDjango'],
+      'https://res.cloudinary.com/angelrodriguez/image/upload/v1703191479/portfolio_2023/mapsyncshot.png',
+    live: 'https://mapsyncpro.netlify.app/',
+    github: 'https://github.com/angelr1076/MapSyncPro',
+    builtWith: ['SiJavascript', 'SiHere'],
   },
   {
     key: 5,
@@ -22,6 +22,17 @@ const projects = [
     builtWith: ['SiJavascript', 'SiJest', 'SiBootstrap', 'SiWebpack'],
   },
   {
+    key: 1,
+    title: 'Mibrary',
+    description:
+      "Django Mibrary is my final project for CS50, offering a platform where users can create profiles, manage books, and leave reviews. It integrates Bootstrap alerts with Django's built-in messaging, and leverages the Cloudinary API for image storage and ckeditor for rich-text book summaries.",
+    image:
+      'https://res.cloudinary.com/angelrodriguez/image/upload/v1692116373/portfolio_2023/mibrary_screen.png',
+    live: 'https://mibrary.up.railway.app/',
+    github: 'https://github.com/angelr1076/django-mibrary',
+    builtWith: ['SiJavascript', 'SiPython', 'SiDjango'],
+  },
+  {
     key: 3,
     title: 'Map Attack',
     description:
@@ -33,15 +44,15 @@ const projects = [
     builtWith: ['SiJavascript', 'SiGooglemaps'],
   },
   {
-    key: 7,
-    title: 'Map Sync Pro',
+    key: 2,
+    title: 'Case Crime Trace',
     description:
-      'Map Sync Pro is designed to streamline the integration of user data with geospatial mapping. The tool combines the precision of mapping technologies with the complexity of user-specific data, providing an intuitive interface for geographic and demographic analysis.',
+      'Case Crime Trace is my final project for CS50 Web. A Django-based app that lets users and law enforcement report and track crimes and suspects. Features include real-time updates, user-specific tracking, and a well-organized, modular codebase.',
     image:
-      'https://res.cloudinary.com/angelrodriguez/image/upload/v1703191479/portfolio_2023/mapsyncshot.png',
-    live: 'https://mapsyncpro.netlify.app/',
-    github: 'https://github.com/angelr1076/MapSyncPro',
-    builtWith: ['SiJavascript', 'SiHere'],
+      'https://res.cloudinary.com/angelrodriguez/image/upload/v1692116373/portfolio_2023/cct_screen.png',
+    live: 'https://cct.up.railway.app/',
+    github: 'https://github.com/angelr1076/django-cct',
+    builtWith: ['SiJavascript', 'SiPython', 'SiDjango'],
   },
   {
     key: 8,
@@ -53,17 +64,6 @@ const projects = [
     live: 'https://pokecardmemory.netlify.app/',
     github: 'https://github.com/angelr1076/MemoryCard',
     builtWith: ['SiJavascript', 'FaReact'],
-  },
-  {
-    key: 2,
-    title: 'Case Crime Trace',
-    description:
-      'Case Crime Trace is my final project for CS50 Web. A Django-based app that lets users and law enforcement report and track crimes and suspects. Features include real-time updates, user-specific tracking, and a well-organized, modular codebase.',
-    image:
-      'https://res.cloudinary.com/angelrodriguez/image/upload/v1692116373/portfolio_2023/cct_screen.png',
-    live: 'https://cct.up.railway.app/',
-    github: 'https://github.com/angelr1076/django-cct',
-    builtWith: ['SiJavascript', 'SiPython', 'SiDjango'],
   },
   {
     key: 4,
