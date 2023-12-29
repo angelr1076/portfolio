@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react';
 import { send } from 'emailjs-com';
+import PropTypes from 'prop-types';
 import { useTheme } from './ThemeContext';
 
-const serviceID = import.meta.env.VITE_serviceID;
-const templateID = import.meta.env.VITE_templateID;
-const publicKey = import.meta.env.VITE_publicKey;
+const serviceID = import.meta.env.VITE_SERVICE_ID;
+const templateID = import.meta.env.VITE_TEMPLATE_ID;
+const publicKey = import.meta.env.VITE_PUBLIC_KEY;
 
-const Notification = () => {
+function Notification({ message, isError }) {
   const [show, setShow] = useState(true);
 
   useEffect(() => {
@@ -23,21 +24,21 @@ const Notification = () => {
         <div
           className='notification'
           style={{
-            backgroundColor: '#43d55c',
+            backgroundColor: isError ? '#ff3860' : '#43d55c',
             color: 'white',
             padding: '8px 16px',
             marginBottom: '16px',
             borderRadius: '4px',
             textAlign: 'center',
           }}>
-          Message sent! Thank you!
+          {message}
         </div>
       )}
     </>
   );
-};
+}
 
-export default function Contact() {
+function Contact() {
   const { theme } = useTheme();
   const [toSend, setToSend] = useState({
     from_name: '',
@@ -46,13 +47,14 @@ export default function Contact() {
   });
 
   const [isSent, setIsSent] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
 
   const handleSubmit = e => {
     e.preventDefault();
 
     if (!toSend.from_name || !toSend.reply_to || !toSend.message) {
       console.log('Validation failed');
-      alert('Please fill out all fields');
+      setErrorMessage('Please fill out all fields');
       return;
     }
 
@@ -60,9 +62,8 @@ export default function Contact() {
       .then(response => {
         console.log('SUCCESS!', response.status, response.text);
         setIsSent(true);
+        setErrorMessage('');
         // Clear form
-        e.target.reset();
-
         setToSend({
           from_name: '',
           message: '',
@@ -71,6 +72,7 @@ export default function Contact() {
       })
       .catch(err => {
         console.log('FAILED...', err);
+        setErrorMessage('Failed to send message. Please try again later.');
       });
 
     e.target.reset();
@@ -83,8 +85,11 @@ export default function Contact() {
   return (
     <section id='contact' className='contact'>
       <h2 className={`page-header page-header-${theme}`}>Contact Me</h2>
-      {/* Send confirmation message */}
-      {isSent && <Notification />}
+      {/* Send confirmation message or error message */}
+      {isSent && (
+        <Notification message='Message sent! Thank you!' isError={false} />
+      )}
+      {errorMessage && <Notification message={errorMessage} isError={true} />}
       <form onSubmit={handleSubmit}>
         <input
           type='text'
@@ -126,3 +131,14 @@ export default function Contact() {
     </section>
   );
 }
+
+Notification.propTypes = {
+  message: PropTypes.string.isRequired,
+  isError: PropTypes.bool.isRequired,
+};
+
+Contact.propTypes = {
+  theme: PropTypes.string,
+};
+
+export default Contact;
