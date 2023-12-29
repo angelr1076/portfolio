@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { send } from 'emailjs-com';
-import PropTypes from 'prop-types';
 import { useTheme } from './ThemeContext';
+import PropTypes from 'prop-types';
 
 const serviceID = import.meta.env.VITE_SERVICE_ID;
 const templateID = import.meta.env.VITE_TEMPLATE_ID;
@@ -42,7 +42,7 @@ function Contact() {
   const { theme } = useTheme();
   const [toSend, setToSend] = useState({
     from_name: '',
-    message: '',
+    message_html: '',
     reply_to: '',
   });
 
@@ -52,7 +52,7 @@ function Contact() {
   const handleSubmit = e => {
     e.preventDefault();
 
-    if (!toSend.from_name || !toSend.reply_to || !toSend.message) {
+    if (!toSend.from_name || !toSend.reply_to || !toSend.message_html) {
       console.log('Validation failed');
       setErrorMessage('Please fill out all fields');
       return;
@@ -66,7 +66,7 @@ function Contact() {
         // Clear form
         setToSend({
           from_name: '',
-          message: '',
+          message_html: '',
           reply_to: '',
         });
       })
@@ -85,7 +85,6 @@ function Contact() {
   return (
     <section id='contact' className='contact'>
       <h2 className={`page-header page-header-${theme}`}>Contact Me</h2>
-      {/* Send confirmation message or error message */}
       {isSent && (
         <Notification message='Message sent! Thank you!' isError={false} />
       )}
@@ -94,6 +93,7 @@ function Contact() {
         <input
           type='text'
           name='to_name'
+          id='to_name'
           placeholder='angelrod'
           value='angelrod'
           disabled
@@ -103,6 +103,7 @@ function Contact() {
           type='text'
           className={theme === 'light' ? 'contact__input--light' : ''}
           name='from_name'
+          id='from_name'
           required
           placeholder='Your name'
           value={toSend.from_name}
@@ -112,18 +113,20 @@ function Contact() {
           type='text'
           className={theme === 'light' ? 'contact__input--light' : ''}
           name='reply_to'
+          id='reply_to'
           required
           placeholder='Your email'
           value={toSend.reply_to}
           onChange={handleChange}
         />
         <textarea
-          name='message'
+          name='message_html'
+          id='message_html'
           className={theme === 'light' ? 'contact__input--light' : ''}
           placeholder='Your message'
           required
           rows={8}
-          value={toSend.message}
+          value={toSend.message_html}
           onChange={handleChange}
         />
         <button type='submit'>Send</button>
@@ -135,10 +138,6 @@ function Contact() {
 Notification.propTypes = {
   message: PropTypes.string.isRequired,
   isError: PropTypes.bool.isRequired,
-};
-
-Contact.propTypes = {
-  theme: PropTypes.string,
 };
 
 export default Contact;
