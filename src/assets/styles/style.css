@@ -1,5 +1,5 @@
 @import 'react-alice-carousel/lib/alice-carousel.css';
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@500&display=swap');
 @font-face {
   font-family: Mija;
   src: url('../fonts/MijaBold.otf') format('opentype'),
@@ -13,6 +13,7 @@
     droid serif, segoe ui, system-ui, Arial, sans-serif;
   --poppins: 'Poppins', sans-serif;
   line-height: 1.5;
+  letter-spacing: 0.25px;
   font-weight: 800;
 
   color-scheme: light dark;
@@ -46,11 +47,13 @@ html {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  letter-spacing: 3px;
 }
 
 h2 {
   font-size: 2.5em;
   line-height: 1.1;
+  letter-spacing: 2px;
 }
 
 a {
