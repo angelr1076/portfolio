@@ -28,7 +28,7 @@
   --light: #dadfe2;
   --pop-green: #43d55c;
   --transparent-light: #fefefe;
-  --dark: #242424;
+  --dark: #282c35;
   --nav-light: #f1f4f7;
   --footer-dark: #444343;
   --plum: #551b54;
@@ -103,11 +103,10 @@ hr {
 
 /* Navbar section */
 .navbar {
-  --navbar-bg-color: var(--dark);
   position: sticky;
   top: 0;
   width: 100%;
-  background-color: var(--navbar-bg-color);
+  background-color: var(--dark);
   opacity: 0.9;
   z-index: 1000;
 }
@@ -364,6 +363,10 @@ input:checked + .slider:before {
   flex-direction: column;
 }
 
+.bio-desc p {
+  line-height: 28px;
+}
+
 .bio-img {
   display: flex;
   justify-content: center;
@@ -578,7 +581,7 @@ button:hover {
 
 .footer {
   margin-top: 1rem;
-  background-color: var(--footer-dark);
+  background-color: var(--dark);
   position: fixed;
   bottom: 0;
   left: 0;
