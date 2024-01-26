@@ -129,7 +129,11 @@ function Contact() {
           value={toSend.message_html}
           onChange={handleChange}
         />
-        <button type='submit'>Send</button>
+        <button
+          type='submit'
+          className={`btn send${theme === 'light' ? ' light' : ''}`}>
+          Send
+        </button>
       </form>
     </section>
   );

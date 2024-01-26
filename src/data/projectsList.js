@@ -1,5 +1,17 @@
 const projects = [
   {
+    key: 9,
+    title: 'React Shopping Cart',
+    description:
+      'A simple shopping cart built with React that uses the Context API, React Router and FontAwesome.',
+    image:
+      'https://res.cloudinary.com/angelrodriguez/image/upload/v1706298620/portfolio_2023/santa-carla-surf-home.png',
+    live: 'https://santacarlasurf.netlify.app/',
+    github:
+      'https://github.com/angelr1076/React-Shopping-Cart?tab=readme-ov-file',
+    builtWith: ['FaReact', 'SiDotenv', 'SiVite'],
+  },
+  {
     key: 7,
     title: 'Map Sync Pro',
     description:
@@ -63,7 +75,7 @@ const projects = [
       'https://res.cloudinary.com/angelrodriguez/image/upload/v1703191515/portfolio_2023/pokecard.png',
     live: 'https://pokecardmemory.netlify.app/',
     github: 'https://github.com/angelr1076/MemoryCard',
-    builtWith: ['SiJavascript', 'FaReact'],
+    builtWith: ['FaReact', 'SiVite'],
   },
   {
     key: 4,
