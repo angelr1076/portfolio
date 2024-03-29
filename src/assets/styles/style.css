@@ -339,7 +339,7 @@ input:checked + .slider:before {
 }
 
 .landing__header > h1 {
-  font-size: 4em;
+  font-size: 5rem;
   font-weight: 900;
   margin-bottom: 0.5em;
 }
@@ -708,6 +708,10 @@ body.light {
     padding: 0;
   }
 
+  .landing__header > h1 {
+    font-size: 3rem;
+  }
+
   p {
     font-size: 1.1em;
   }
@@ -716,6 +720,10 @@ body.light {
 @media (max-width: 768px) {
   .navbar-toggler {
     display: block;
+  }
+
+  .landing__header > h1 {
+    font-size: 4rem;
   }
 
   .navbar-collapse {
