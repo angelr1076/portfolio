@@ -27,7 +27,7 @@
   -webkit-text-size-adjust: 100%;
   --navbar-height: 60px;
   --light: #dadfe2;
-  --pop-green: #43d55c;
+  --pop-green: #00c49a;
   --transparent-light: #fefefe;
   --dark: #282c35;
   --nav-light: #f1f4f7;
@@ -492,19 +492,13 @@ textarea:focus {
   gap: 0.5em;
 
   color: #ffffff;
-  background-color: var(--dark);
+  background-color: var(--pop-green);
   border: 3px solid var(--light);
   border-radius: 5px;
   cursor: pointer;
   width: 100%;
 
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.live:hover,
-.github:hover,
-.send:hover {
-  background-color: var(--footer-dark);
 }
 
 /* To top button */
@@ -627,15 +621,8 @@ body.light {
 }
 
 .btn.light {
-  background-color: var(--transparent-light);
-  color: var(--dark);
   border: 3px solid var(--dark);
-
   transition: background-color 0.5s ease-in-out;
-}
-
-.btn.light:hover {
-  background-color: var(--btn-grayish);
 }
 
 .nav-link.light {
@@ -663,10 +650,8 @@ body.light {
 .resume__img {
   max-width: 100%;
   max-height: 100%;
-  .resume__img {
-    image-rendering: -webkit-optimize-contrast;
-    image-rendering: crisp-edges;
-  }
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: high-quality;
 }
 
 .resume__img.light {
