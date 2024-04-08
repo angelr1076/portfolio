@@ -387,8 +387,11 @@ input:checked + .slider:before {
 }
 
 .project-card {
-  margin: 0 auto;
-  max-width: 500px;
+  max-width: 600px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .project-card__img {
@@ -396,6 +399,8 @@ input:checked + .slider:before {
 }
 
 .project-card__details-container {
+  max-width: 500px;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
