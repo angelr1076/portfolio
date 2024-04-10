@@ -436,6 +436,13 @@ input:checked + .slider:before {
   line-height: 1.25;
 }
 
+.alice-carousel__prev-btn [data-area]:after,
+.alice-carousel__next-btn [data-area]:after {
+  font-size: 1.5em;
+}
+
+/* Resume section */
+
 .resume__container {
   max-width: 800px;
 }
