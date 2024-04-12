@@ -329,6 +329,7 @@ input:checked + .slider:before {
   display: flex;
   justify-content: center;
   height: 100vh;
+  max-width: 1000px;
 }
 
 .landing img {
