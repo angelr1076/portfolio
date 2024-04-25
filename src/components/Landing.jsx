@@ -1,4 +1,4 @@
-import img from '../assets/images/dev.svg';
+import img from '../assets/images/coding.svg';
 
 export default function Landing() {
   return (
@@ -7,7 +7,7 @@ export default function Landing() {
         <h1>Angel Rodriguez</h1>
         <h2>Application Developer</h2>
       </div>
-      <div>
+      <div className='landing__img-container'>
         <img src={img} className='landing__img' />
       </div>
     </section>
