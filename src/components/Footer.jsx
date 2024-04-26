@@ -24,7 +24,7 @@ export default function Footer() {
         <FaGithub />
       </a>
       <a
-        href='mailto:devlife@beachlife.email'
+        href='mailto:node@beachlife.email'
         className={`footer__link${theme === 'light' ? ' light' : ''}`}
         rel='noreferrer'
         target='_blank'
