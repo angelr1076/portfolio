@@ -42,8 +42,8 @@ function Contact() {
   const { theme } = useTheme();
   const [toSend, setToSend] = useState({
     from_name: '',
-    message_html: '',
     reply_to: '',
+    message_html: '',
   });
 
   const [isSent, setIsSent] = useState(false);
@@ -71,8 +71,10 @@ function Contact() {
         });
       })
       .catch(err => {
-        console.log('FAILED...', err);
-        setErrorMessage('Failed to send message. Please try again later.');
+        console.error('Failed to send message:', err);
+        setErrorMessage(
+          `Failed to send message. Please try again later. ${err.toString()}`
+        );
       });
 
     e.target.reset();
