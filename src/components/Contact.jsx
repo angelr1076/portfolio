@@ -1,8 +1,6 @@
 import { useState, useEffect } from 'react';
 import { send } from 'emailjs-com';
 import { useTheme } from './ThemeContext';
-import { HiOutlineMailOpen } from 'react-icons/hi';
-
 import PropTypes from 'prop-types';
 
 const serviceID = import.meta.env.VITE_SERVICE_ID;
@@ -76,16 +74,8 @@ function Contact() {
         });
       })
       .catch(err => {
-<<<<<<< HEAD
         console.log('FAILED...', err);
         setErrorMessage('Failed to send message. Please try again later.');
-=======
-        console.log(serviceID, templateID, publicKey);
-        console.error('Failed to send message:', err);
-        setErrorMessage(
-          `Failed to send message. Please try again later. ${err.toString()}`
-        );
->>>>>>> emailSetup
       });
 
     e.target.reset();
