@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import { send } from 'emailjs-com';
 import { useTheme } from './ThemeContext';
+import { HiOutlineMailOpen } from 'react-icons/hi';
+
 import PropTypes from 'prop-types';
 
 const serviceID = import.meta.env.VITE_SERVICE_ID;
@@ -40,7 +42,9 @@ function Notification({ message, isError }) {
 
 function Contact() {
   const { theme } = useTheme();
+  const to_name = 'node@beachlife.email';
   const [toSend, setToSend] = useState({
+    to_name,
     from_name: '',
     reply_to: '',
     message_html: '',
@@ -60,6 +64,7 @@ function Contact() {
 
     send(serviceID, templateID, toSend, publicKey)
       .then(response => {
+        console.log(serviceID, templateID, publicKey);
         console.log('SUCCESS!', response.status, response.text);
         setIsSent(true);
         setErrorMessage('');
@@ -71,6 +76,7 @@ function Contact() {
         });
       })
       .catch(err => {
+        console.log(serviceID, templateID, publicKey);
         console.error('Failed to send message:', err);
         setErrorMessage(
           `Failed to send message. Please try again later. ${err.toString()}`
@@ -97,7 +103,7 @@ function Contact() {
           name='to_name'
           id='to_name'
           placeholder='angelrod'
-          value='angelrod'
+          value={to_name}
           disabled
           hidden
         />

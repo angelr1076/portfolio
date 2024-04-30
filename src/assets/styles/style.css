@@ -1,5 +1,6 @@
 @import 'react-alice-carousel/lib/alice-carousel.css';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@500&display=swap');
+
 @font-face {
   font-family: Mija;
   src: url('../fonts/MijaBold.otf') format('opentype'),
@@ -70,11 +71,11 @@ a {
   padding: 1.25em;
 }
 
-.main > section {
+.main>section {
   padding-top: var(--navbar-height);
 }
 
-section > h2 {
+section>h2 {
   line-height: 1.1;
   text-align: center;
 }
@@ -312,15 +313,15 @@ button.navbar-toggler:hover {
   border-radius: 50%;
 }
 
-input:checked + .slider {
+input:checked+.slider {
   background-color: #3b3a3a;
 }
 
-input:focus + .slider {
+input:focus+.slider {
   box-shadow: 0 0 1px #3b3a3a;
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
   transform: translateX(26px);
 }
 
@@ -338,13 +339,13 @@ input:checked + .slider:before {
   display: block;
 }
 
-.landing__header > h1 {
+.landing__header>h1 {
   font-size: 5rem;
   font-weight: 900;
   margin-bottom: 0.5em;
 }
 
-.landing__header > h2 {
+.landing__header>h2 {
   font-size: 2em;
   font-weight: 900;
 }
@@ -559,15 +560,19 @@ textarea:focus {
   0% {
     transform: translateY(0px);
   }
+
   25% {
     transform: translateY(20px);
   }
+
   50% {
     transform: translateY(0px);
   }
+
   75% {
     transform: translateY(-20px);
   }
+
   100% {
     transform: translateY(0px);
   }
@@ -599,6 +604,7 @@ textarea:focus {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -713,7 +719,7 @@ body.light {
     display: block;
   }
 
-  .landing__header > h1 {
+  .landing__header>h1 {
     font-size: 4rem;
   }
 
@@ -753,7 +759,7 @@ body.light {
     flex-direction: column;
   }
 
-  .about > div {
+  .about>div {
     max-width: 80%;
     margin: 0 auto;
   }
@@ -764,7 +770,7 @@ body.light {
     text-align: left;
   }
 
-  .about > div:first-child {
+  .about>div:first-child {
     padding-right: 0;
   }
 }
