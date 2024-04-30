@@ -16,5 +16,8 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
+    'arrow-parens': ['error', 'as-needed'],
+    quotes: ['error', 'single'],
+    'jsx-quotes': ['error', 'prefer-single'],
   },
-}
+};
