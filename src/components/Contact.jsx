@@ -62,7 +62,6 @@ function Contact() {
 
     send(serviceID, templateID, toSend, publicKey)
       .then(response => {
-        console.log(serviceID, templateID, publicKey);
         console.log('SUCCESS!', response.status, response.text);
         setIsSent(true);
         setErrorMessage('');
