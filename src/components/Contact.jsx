@@ -74,7 +74,9 @@ function Contact() {
       })
       .catch(err => {
         console.log('FAILED...', err);
-        setErrorMessage('Failed to send message. Please try again later.');
+        setErrorMessage(
+          `Failed to send message. Please try again later. ${err.text}`
+        );
       });
 
     e.target.reset();
