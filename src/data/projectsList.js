@@ -3,7 +3,7 @@ const projects = [
     id: 2,
     title: 'Case Crime Trace',
     description:
-      'Case Crime Trace is my final project for Harvard&#39;s certified CS50 web programming course. A Django-based app that lets citizens and law enforcement report and track crimes and suspects. Features include real-time updates and user-specific tracking.',
+      "Case Crime Trace is my final project for Harvard's certified CS50 web programming course. A Django-based app that lets citizens and law enforcement report and track crimes and suspects. Features include real-time updates and user-specific tracking.",
     image:
       'https://res.cloudinary.com/angelrodriguez/image/upload/v1692116373/portfolio_2023/cct_screen.png',
     live: 'https://cct.up.railway.app/',
@@ -14,7 +14,7 @@ const projects = [
     id: 1,
     title: 'Mibrary',
     description:
-      'Django Mibrary is my final project for Harvard&#39;s CS50 certified programming course, offering a platform where users can create profiles, manage books, and leave reviews. It integrates Bootstrap alerts with Django&#39;s built-in messaging, and leverages the Cloudinary API for image storage and ckeditor for rich-text book summaries.',
+      "Django Mibrary is my final project for Harvard's CS50 certified programming course, offering a platform where users can create profiles, manage books, and leave reviews. It integrates Bootstrap alerts with Django's built-in messaging, and leverages the Cloudinary API for image storage and ckeditor for rich-text book summaries.",
     image:
       'https://res.cloudinary.com/angelrodriguez/image/upload/v1692116373/portfolio_2023/mibrary_screen.png',
     live: 'https://mibrary.up.railway.app/',
