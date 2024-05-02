@@ -1,34 +1,23 @@
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import "react-tabs/style/react-tabs.css";
-import "../assets/styles/style.css";
-import jsProjects from '../data/javascriptProjects';
-import pyProjects  from '../data/pythonProjects';
-import ProjectCard from "./ProjectCard";
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import 'react-tabs/style/react-tabs.css';
+import '../assets/styles/style.css';
+import ProjectCard from './ProjectCard';
+import projects from '../data/projectsList';
 
 export default function TabComponent() {
   return (
-    <div id='tabs' className="tabs">
+    <div id='tabs' className='tabs'>
       <Tabs>
         <TabList>
-          <Tab>JavaScript</Tab>
-          <Tab>Python</Tab>
+          {projects.map(project => (
+            <Tab key={project.id}>{project.title}</Tab>
+          ))}
         </TabList>
-        <TabPanel className='tab-panel'>
-          {jsProjects.map(project => (
-        <ProjectCard
-          key={project.id}
-          {...project}
-        />
-      ))}
-        </TabPanel>
-        <TabPanel className='tab-panel'>
-          {pyProjects.map(project => (
-        <ProjectCard
-          key={project.id}
-          {...project}
-        />
-      ))}
-        </TabPanel>
+        {projects.map(project => (
+          <TabPanel className='tab-panel' key={project.id}>
+            <ProjectCard key={project.id} {...project} />
+          </TabPanel>
+        ))}
       </Tabs>
     </div>
   );

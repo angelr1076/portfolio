@@ -356,8 +356,8 @@ input:checked+.slider:before {
   padding: 2em 0;
 }
 
-.about,
-.projects {
+/* About */
+.about {
   max-width: 600px;
 }
 
@@ -379,6 +379,7 @@ input:checked+.slider:before {
 /* Projects */
 .projects {
   width: 100%;
+  max-width: 800px;
 }
 
 .projects,
@@ -388,11 +389,10 @@ input:checked+.slider:before {
 }
 
 .project-card {
-  max-width: 600px;
-
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 1.5em;
 }
 
 .project-card__img {
@@ -442,8 +442,24 @@ input:checked+.slider:before {
   font-size: 1.5em;
 }
 
-/* Resume section */
+.react-tabs__tab-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
+.tab-panel {
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+  /* Start with hidden panels */
+}
+
+.react-tabs__tab-panel--selected {
+  opacity: 1;
+  /* Fade in when active */
+}
+
+/* Resume section */
 .resume__container {
   max-width: 800px;
 }
@@ -697,6 +713,10 @@ body.light {
 
 /* Media Queries */
 @media (max-width: 500px) {
+  .react-tabs__tab-list {
+    justify-content: space-between;
+  }
+
   .project-card {
     flex-direction: column;
   }
