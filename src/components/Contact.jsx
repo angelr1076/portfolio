@@ -60,6 +60,9 @@ function Contact() {
       return;
     }
 
+    setIsSent(false);
+    setErrorMessage('');
+
     send(serviceID, templateID, toSend, publicKey)
       .then(response => {
         console.log('SUCCESS!', response.status, response.text);
@@ -67,6 +70,7 @@ function Contact() {
         setErrorMessage('');
         // Clear form
         setToSend({
+          to_name,
           from_name: '',
           message_html: '',
           reply_to: '',
@@ -77,6 +81,7 @@ function Contact() {
         setErrorMessage(
           `Failed to send message. Please try again later. ${err.text}`
         );
+        setIsSent(false);
       });
 
     e.target.reset();
