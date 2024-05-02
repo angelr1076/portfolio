@@ -24,8 +24,8 @@ function Notification({ message, isError }) {
         <div
           className='notification'
           style={{
-            backgroundColor: isError ? '#ff3860' : '#43d55c',
-            color: 'white',
+            backgroundColor: isError ? '#f71b43' : '#00c49a',
+            color: '#fff',
             padding: '8px 16px',
             marginBottom: '16px',
             borderRadius: '4px',
