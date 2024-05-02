@@ -451,12 +451,10 @@ input:checked+.slider:before {
 .tab-panel {
   transition: opacity 0.5s ease-in-out;
   opacity: 0;
-  /* Start with hidden panels */
 }
 
 .react-tabs__tab-panel--selected {
   opacity: 1;
-  /* Fade in when active */
 }
 
 /* Resume section */
