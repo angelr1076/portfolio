@@ -66,17 +66,6 @@ const projects = [
     builtWith: ['SiJavascript'],
   },
   {
-    id: 6,
-    title: 'Weather App',
-    description:
-      'Featuring daily and five-day forecasts with unique weather icons and temperature toggles, the app uses async/await, Webpack, and various APIs. It also offers a dark/light theme switch.',
-    image:
-      'https://res.cloudinary.com/angelrodriguez/image/upload/v1693332271/odin_weather.png',
-    live: 'https://odin-weatherly.netlify.app/',
-    github: 'https://github.com/angelr1076/Weather-App',
-    builtWith: ['SiJavascript', 'SiDotenv', 'SiBootstrap', 'SiWebpack'],
-  },
-  {
     id: 9,
     title: 'React Shopping Cart',
     description:
