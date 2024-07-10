@@ -1,13 +1,5 @@
 # Portfolio Site [![Netlify Status](https://api.netlify.com/api/v1/badges/956c3c68-b48b-410e-abef-4c540052bd94/deploy-status)](https://app.netlify.com/sites/angelrod/deploys)
 
-<div style="display: flex; justify-content: space-between;">
-  <div>
-  </div>
-  <div>
-  <a href="https://angelrod.dev/" target="_blank">Live Site</a>
-  </div>
-</div>
-
 ![Homepage image dark](./src/assets/images/portfolio-dark.png 'Screenshot of portfolio homepage default')
 ![Homepage image light](./src/assets/images/portfolio-light.png 'Screenshot of portfolio homepage light')
 
