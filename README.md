@@ -1,4 +1,4 @@
-# Portfolio Site
+# Portfolio Site [![Netlify Status](https://api.netlify.com/api/v1/badges/956c3c68-b48b-410e-abef-4c540052bd94/deploy-status)](https://app.netlify.com/sites/angelrod/deploys)
 
 <div style="display: flex; justify-content: space-between;">
   <div>
