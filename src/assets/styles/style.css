@@ -72,7 +72,7 @@ a {
 }
 
 .main>section {
-  padding-top: var(--navbar-height);
+  /* padding-top: var(--navbar-height); */
 }
 
 section>h2 {
@@ -711,6 +711,10 @@ body.light {
 
 /* Media Queries */
 @media (max-width: 500px) {
+  .resume-section {
+    margin-top: 200px;
+  }
+
   .react-tabs__tab-list {
     justify-content: space-between;
   }
