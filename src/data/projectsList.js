@@ -50,7 +50,7 @@ const projects = [
       'Map Attack Remastered is a revamped programming boot-camp project that uses Google Maps APIs for interactive country location gaming. The update includes modularized functions, enhanced UI feedback, and a more responsive design using Flexbox and CSS Grid.',
     image:
       'https://res.cloudinary.com/angelrodriguez/image/upload/v1693256876/mapattack.png',
-    live: 'https://mapattackre.netlify.app/',
+    live: 'https://mapattackremastered-production.up.railway.app/',
     github: 'https://github.com/angelr1076/MapAttackRemastered',
     builtWith: ['SiJavascript', 'SiGooglemaps'],
   },
