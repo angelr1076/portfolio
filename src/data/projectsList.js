@@ -35,7 +35,7 @@ const projects = [
       'Bidstrocity is an eBay-like Django auction site designed for creating, managing, and bidding on listings. It allows users to comment on, watch, and close auctions while dynamically tracking bids and statuses in real-time.',
     image: bidstrocityImage,
     live: 'https://bidstrocity.up.railway.app/',
-    github: 'https://github.com/angelr1076/django-auction-site',
+    github: 'https://github.com/angelr1076/commerce',
     builtWith: ['SiPython', 'SiDjango'],
   },
   {
