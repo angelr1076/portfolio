@@ -45,7 +45,7 @@ const projects = [
       'Map Sync Pro is designed to streamline the integration of user data with geospatial mapping. The tool combines the precision of mapping technologies with the complexity of user-specific data, providing an intuitive interface for geographic and demographic analysis.',
     image:
       'https://res.cloudinary.com/angelrodriguez/image/upload/v1703191479/portfolio_2023/mapsyncshot.png', // Not stored locally
-    live: 'https://mapsyncpro.netlify.app/',
+    live: 'https://mapsyncpro.pages.dev/',
     github: 'https://github.com/angelr1076/MapSyncPro',
     builtWith: ['SiJavascript', 'SiHere'],
   },
@@ -55,7 +55,7 @@ const projects = [
     description:
       'Battleship, just like the classic board-game, features a smart AI opponent. Built using best practices like factory functions and module bundling via Webpack and Jest testing.',
     image: battleshipImage,
-    live: 'https://battleship-boom.netlify.app/',
+    live: 'https://battleship-boom.pages.dev/',
     github: 'https://github.com/angelr1076/Battleship',
     builtWith: ['SiJavascript', 'SiJest', 'SiBootstrap', 'SiWebpack'],
   },
@@ -85,7 +85,7 @@ const projects = [
     description:
       'A simple shopping cart built with React that uses the Context API, React Router and FontAwesome.',
     image: santaCarlaSurfImage,
-    live: 'https://santacarlasurf.netlify.app/',
+    live: 'https://santa-carla-surf.pages.dev/',
     github:
       'https://github.com/angelr1076/React-Shopping-Cart?tab=readme-ov-file',
     builtWith: ['FaReact', 'SiDotenv', 'SiVite'],
@@ -96,7 +96,7 @@ const projects = [
     description:
       'This project is a modern, interactive memory card game built using React. Designed to be both engaging and visually appealing, it offers a fun and challenging way to test and improve your memory.',
     image: pokeCardImage,
-    live: 'https://pokecardmemory.netlify.app/',
+    live: 'https://poke-cards.pages.dev/',
     github: 'https://github.com/angelr1076/MemoryCard',
     builtWith: ['FaReact', 'SiVite'],
   },
