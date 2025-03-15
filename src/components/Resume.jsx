@@ -6,10 +6,10 @@ export default function Skills() {
 
   return (
     <section id='resume' className='resume-section'>
-      <h2 className={`page-header page-header-${theme}`}>Resume</h2>
+      <h2 className={`page-header page-header-${theme}`}>Experience</h2>
       <div className='resume__container'>
         <a
-          href='https://resume.creddle.io/resume/w3izg6rjth'
+          href='https://www.cake.me/angel-rod'
           className='resume__link'
           rel='noreferrer'
           target='_blank'>

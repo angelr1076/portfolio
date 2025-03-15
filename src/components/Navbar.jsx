@@ -72,7 +72,7 @@ export default function Navbar() {
                   to='landing'
                   spy={true}
                   smooth={true}
-                  offset={-50}
+                  offset={-20}
                   duration={500}
                   onSetActive={() => setLandingActive(true)}
                   onSetInactive={() => setLandingActive(false)}>
@@ -92,21 +92,23 @@ export default function Navbar() {
               <li className='nav-item'>
                 <Link
                   className={`nav-link${theme === 'light' ? ' light' : ''}`}
-                  to='projects'
+                  to='resume'
                   spy={true}
                   smooth={true}
+                  offset={-20}
                   duration={500}>
-                  Projects
+                  Experience
                 </Link>
               </li>
               <li className='nav-item'>
                 <Link
                   className={`nav-link${theme === 'light' ? ' light' : ''}`}
-                  to='resume'
+                  to='projects'
                   spy={true}
                   smooth={true}
+                  offset={-20}
                   duration={500}>
-                  Resume
+                  Projects
                 </Link>
               </li>
               <li className='nav-item'>

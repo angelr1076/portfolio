@@ -15,8 +15,8 @@ function App() {
       <main className='main'>
         <Landing />
         <About />
-        <Projects />
         <Resume />
+        <Projects />
         <Contact />
         <ScrollToTop />
       </main>
