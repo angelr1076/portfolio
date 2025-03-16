@@ -85,6 +85,7 @@ export default function Navbar() {
                   to='about'
                   spy={true}
                   smooth={true}
+                  offset={-20}
                   duration={500}>
                   About
                 </Link>
@@ -117,6 +118,7 @@ export default function Navbar() {
                   to='contact'
                   spy={true}
                   smooth={true}
+                  offset={-20}
                   duration={500}>
                   Contact
                 </Link>
