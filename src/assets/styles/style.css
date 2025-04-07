@@ -30,8 +30,11 @@
   --light: #dadfe2;
   --white: #ffffff;
   --pop-green: #00c49a;
+  --edu-blue: rgb(33, 150, 243);
+  --edu-red: rgb(233, 30, 99);
   --transparent-light: #fefefe;
   --dark: #282c35;
+  --charcoal: rgba(99, 100, 103, 0.9);
   --nav-light: #f1f4f7;
   --footer-dark: #444343;
   --plum: #551b54;
@@ -461,6 +464,11 @@ input:checked+.slider:before {
 /* Resume section */
 .resume__container {
   max-width: 800px;
+}
+
+.vertical-timeline-element-date {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 /* Contact section  */
