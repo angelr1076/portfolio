@@ -41,9 +41,6 @@ function Resume() {
               Application Developer
             </h3>
             <h4 className='vertical-timeline-element-subtitle'>
-              Ethos Therapy Solutions
-            </h4>
-            <h4 className='vertical-timeline-element-subtitle'>
               Blue Bell, PA
             </h4>
             <p>
