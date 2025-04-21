@@ -44,8 +44,8 @@ function Resume() {
               Blue Bell, PA
             </h4>
             <p>
-              Application Development | API Integration | Geospatial Mapping |
-              Workflow Automation | Efficiency Optimization.
+              User Application Development | API Integration | Workflow
+              Automation | Efficiency Optimization | Geospatial Mapping
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
@@ -72,8 +72,8 @@ function Resume() {
               Fort Washington, PA
             </h4>
             <p>
-              Database Design | Web App Launch | Task Automation | Workflow
-              Optimization | Client Solutions.
+              Web App Launch | Database Design | Workflow Optimization | Task
+              Automation | Client Consulting
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
@@ -99,54 +99,6 @@ function Resume() {
               Completed 720+ hours of intensive training covering full-stack
               technologies, OOP, TDD, pair-programming, AGILE, and SCRUM.
             </h4>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className='vertical-timeline-element--education'
-            contentStyle={{
-              background: 'var(--edu-blue)',
-              color: theme === 'dark' ? 'var(--white)' : 'var(--footer-dark)',
-            }}
-            contentArrowStyle={{ borderRight: '7px solid  var(--edu-blue)' }}
-            iconStyle={{
-              background: 'var(--edu-blue)',
-              color: '#fff',
-              border:
-                theme === 'dark'
-                  ? '1px solid var(--white)'
-                  : '1px solid var(--charcoal)',
-            }}
-            icon={<SchoolIcon />}>
-            <h3 className='vertical-timeline-element-title'>
-              CS50W: Web Programming with Python and JavaScript
-            </h3>
-            <p>
-              Completed Harvard&apos;s online course CS50W, including six
-              projects.
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className='vertical-timeline-element--education'
-            contentStyle={{
-              background: 'var(--edu-blue)',
-              color: theme === 'dark' ? 'var(--white)' : 'var(--footer-dark)',
-            }}
-            contentArrowStyle={{ borderRight: '7px solid  var(--edu-blue)' }}
-            iconStyle={{
-              background: 'var(--edu-blue)',
-              color: '#fff',
-              border:
-                theme === 'dark'
-                  ? '1px solid var(--white)'
-                  : '1px solid var(--charcoal)',
-            }}
-            icon={<SchoolIcon />}>
-            <h3 className='vertical-timeline-element-title'>
-              CS50: Introduction to Computer Science
-            </h3>
-            <p>
-              Completed Harvard&apos;s CS50, including nine problem sets and one
-              capstone project.
-            </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className='vertical-timeline-element--education'

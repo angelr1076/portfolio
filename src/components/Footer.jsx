@@ -27,7 +27,6 @@ export default function Footer() {
         href='mailto:node@beachlife.email'
         className={`footer__link${theme === 'light' ? ' light' : ''}`}
         rel='noreferrer'
-        target='_blank'
         title='Send Me An Email'>
         <GoMail />
       </a>
