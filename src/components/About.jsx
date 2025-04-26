@@ -13,28 +13,24 @@ export default function About() {
         </div>
         <div className='bio-desc'>
           <p>
-            Driven by a childhood curiosity to understand how things work,
-            I&apos;ve always been passionate about deconstructing and
-            reassembling the world around me. As a classically trained chef, I
-            refined my skills and learned the value of attention to detail, hard
-            work, and team collaboration.
+            Driven by a childhood curiosity to understand how things work, I've
+            always been passionate about deconstructing and reassembling the
+            world around me.
           </p>
 
           <p>
-            With my interests leaning more towards technology, I pivoted my
-            career and took the plunge into a full-time web development
-            bootcamp. This transformative experience taught me the power of
-            rapid learning, resilience, and the importance of embracing new
-            challenges.
+            At Ethos Therapy Solutions, I designed and led a SharePoint
+            migration that saved over $90,000, built mapping systems to improve
+            logistics, and developed internal apps that reduced support
+            overhead. I focus on designing systems that are clear, reliable, and
+            built to serve real-world needs.
           </p>
 
           <p>
-            Today, as an app developer, I am proud to combine my passions for
-            learning, problem-solving, and creating solutions that empower
-            others to focus on their work without getting bogged down by
-            inefficient processes. I&apos;m excited to continue growing in tech
-            and contribute my skills to develop meaningful products that make a
-            difference in people&apos;s lives.
+            Today, I build solutions that help people focus on meaningful work,
+            not get bogged down by broken processes. I’m committed to sharpening
+            my skills, learning faster, and developing products that make a real
+            difference.
           </p>
         </div>
       </div>
