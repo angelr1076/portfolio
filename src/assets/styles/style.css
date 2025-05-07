@@ -554,8 +554,8 @@ textarea:focus {
   background-color: var(--pop-green);
   border: 2px solid #fff;
   border-radius: 50%;
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   color: #fff;
   cursor: pointer;
   animation: movebtn 3s ease-in-out infinite;
