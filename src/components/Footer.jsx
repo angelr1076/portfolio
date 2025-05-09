@@ -2,13 +2,9 @@ import { FaLinkedin, FaGithub, FaReact } from 'react-icons/fa';
 import { GoMail } from 'react-icons/go';
 import { ImFontSize } from 'react-icons/im';
 import { useTheme } from './ThemeContext';
-import { useState } from 'react';
-import Contact from './Contact';
 
 export default function Footer() {
   const { theme } = useTheme();
-  const [isContactOpen, setIsContactOpen] = useState(false);
-
   return (
     <div className={`footer${theme === 'light' ? ' light' : ''}`}>
       <a
@@ -28,18 +24,12 @@ export default function Footer() {
         <FaGithub />
       </a>
       <a
-        type='button'
+        href='mailto:node@beachlife.email'
         className={`footer__link${theme === 'light' ? ' light' : ''}`}
         rel='noreferrer'
-        title='Send Me An Email'
-        onClick={() => setIsContactOpen(true)}
-        style={{ background: 'none', border: 'none', cursor: 'pointer' }}>
+        title='Send Me An Email'>
         <GoMail />
       </a>
-      <Contact
-        showModal={isContactOpen}
-        onClose={() => setIsContactOpen(false)}
-      />
       <p>
         <FaReact
           className={`react-logo${theme === 'light' ? ' light' : ''}`}

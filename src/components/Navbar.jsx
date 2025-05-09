@@ -112,6 +112,17 @@ export default function Navbar() {
                   Projects
                 </Link>
               </li>
+              <li className='nav-item'>
+                <Link
+                  className={`nav-link${theme === 'light' ? ' light' : ''}`}
+                  to='contact'
+                  spy={true}
+                  smooth={true}
+                  offset={-20}
+                  duration={500}>
+                  Contact
+                </Link>
+              </li>
             </div>
             <li className='nav-item'>
               <div className='theme-switch-wrapper'>
