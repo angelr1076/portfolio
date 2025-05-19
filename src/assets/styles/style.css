@@ -755,6 +755,7 @@ body.dark textarea {
 }
 
 @media (max-width: 768px) {
+
   .navbar-toggler {
     display: block;
   }
@@ -816,6 +817,14 @@ body.dark textarea {
 }
 
 @media (max-width: 1024px) {
+
+  .projects,
+  .resume,
+  .contact,
+  .about {
+    height: 75vh;
+  }
+
   .landing {
     flex-direction: column;
     align-items: center;
