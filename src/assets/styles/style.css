@@ -390,7 +390,8 @@ input:checked+.slider:before {
 .resume,
 .contact,
 .about {
-  height: 100vh;
+  height: auto;
+  min-height: 100vh;
 }
 
 .project-card {
@@ -558,8 +559,6 @@ textarea:focus {
   width: 40px;
   color: #fff;
   cursor: pointer;
-  animation: movebtn 3s ease-in-out infinite;
-  transition: all 0.5s ease-in-out;
 }
 
 .icon-style:hover {
@@ -729,6 +728,10 @@ body.dark textarea {
 
 /* Media Queries */
 @media (max-width: 500px) {
+  .about {
+    margin-bottom: 10em;
+  }
+
   .resume-section {
     margin-top: 200px;
   }
@@ -765,7 +768,7 @@ body.dark textarea {
   }
 
   .landing img {
-    max-width: 700px;
+    width: 75%;
   }
 
   .navbar-collapse {
@@ -798,6 +801,16 @@ body.dark textarea {
 
   .about {
     flex-direction: column;
+    margin-bottom: 2em;
+  }
+
+  .about>div {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .bio-desc {
+    padding: 1em;
   }
 
   .about>div {
@@ -818,13 +831,6 @@ body.dark textarea {
 
 @media (max-width: 1024px) {
 
-  .projects,
-  .resume,
-  .contact,
-  .about {
-    height: 75vh;
-  }
-
   .landing {
     flex-direction: column;
     align-items: center;
@@ -841,7 +847,7 @@ body.dark textarea {
   }
 
   .landing img {
-    max-width: 90%;
+    max-width: 80%;
   }
 }
 
