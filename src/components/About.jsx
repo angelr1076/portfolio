@@ -13,22 +13,25 @@ export default function About() {
         </div>
         <div className='bio-desc'>
           <p>
-            Driven by a childhood curiosity to understand how things work, I've
+            Driven by a childhood curiosity to understand how things work, I’ve
             always been passionate about deconstructing and reassembling the
             world around me.
           </p>
+
           <p>
-            At Ethos Therapy Solutions, I designed and implemented a SharePoint
-            migration that saved over $90,000, built mapping systems to improve
-            logistics, and developed internal apps that reduced support
-            overhead. I focus on designing systems that are clear, reliable, and
-            built to serve real-world needs.
+            In my current role, I led an attachment storage migration from one
+            platform to another, helping the company avoid a near six-figure
+            increase in infrastructure costs. I also built mapping tools to
+            streamline logistics operations and developed internal applications
+            that significantly reduced support overhead. I focus on designing
+            systems that are intuitive, dependable, and allow people to focus on
+            their work, not get bogged down by broken processes.
           </p>
+
           <p>
-            Today, I build solutions that help people focus on meaningful work,
-            not get bogged down by broken processes. I'm committed to refining
-            my craft, staying curious, and continuing to grow as a developer
-            throughout my career.
+            I’m committed to sharpening my skills, staying curious, and
+            continuing to grow as a lifelong learner and developer who builds
+            tools that make a difference.
           </p>
         </div>
       </div>
