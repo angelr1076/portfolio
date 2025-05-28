@@ -117,12 +117,12 @@ export default function Navbar() {
               <div className='theme-icon-wrapper' onClick={toggleTheme}>
                 <BsSun
                   className={`theme-icon sun-icon ${
-                    theme === 'light' ? 'visible' : 'hidden'
+                    theme === 'dark' ? 'visible' : 'hidden'
                   }`}
                 />
                 <BsMoonStars
                   className={`theme-icon moon-icon ${
-                    theme === 'dark' ? 'visible' : 'hidden'
+                    theme === 'light' ? 'visible' : 'hidden'
                   }`}
                 />
               </div>
