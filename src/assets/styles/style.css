@@ -761,9 +761,22 @@ body.dark textarea {
     padding: 0;
   }
 
-  .modal-content {
-    height: 80vh;
-    overflow-y: hidden;
+  .contact {
+    padding: 0;
+  }
+
+  .contact h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+  }
+
+  .footer {
+    height: 30px;
+    padding: 0.5em 0;
+  }
+
+  .footer__link {
+    font-size: 1.2em;
   }
 
   p {
