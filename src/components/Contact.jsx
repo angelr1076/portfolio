@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { send } from 'emailjs-com';
+import { AiFillCloseCircle } from 'react-icons/ai';
 import { useTheme } from './ThemeContext';
 import PropTypes from 'prop-types';
 
@@ -38,8 +39,20 @@ function Notification({ message, isError }) {
   );
 }
 
-function Contact() {
+function Contact({ showModal, setShowModal }) {
   const { theme } = useTheme();
+
+  useEffect(() => {
+    if (showModal) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [showModal]);
+
   const to_name = 'node@beachlife.email';
   const [toSend, setToSend] = useState({
     to_name,
@@ -50,6 +63,10 @@ function Contact() {
 
   const [isSent, setIsSent] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
+
+  if (!showModal) {
+    return null;
+  }
 
   const handleSubmit = e => {
     e.preventDefault();
@@ -92,65 +109,87 @@ function Contact() {
   };
 
   return (
-    <section id='contact' className='contact'>
-      <h2 className={`page-header page-header-${theme}`}>Contact Me</h2>
-      {isSent && (
-        <Notification message='Message sent! Thank you!' isError={false} />
-      )}
-      {errorMessage && <Notification message={errorMessage} isError={true} />}
-      <form onSubmit={handleSubmit}>
-        <input
-          type='text'
-          name='to_name'
-          id='to_name'
-          placeholder='angelrod'
-          value={to_name}
-          disabled
-          hidden
-        />
-        <input
-          type='text'
-          className={theme === 'light' ? 'contact__input--light' : ''}
-          name='from_name'
-          id='from_name'
-          required
-          placeholder='Your name'
-          value={toSend.from_name}
-          onChange={handleChange}
-        />
-        <input
-          type='text'
-          className={theme === 'light' ? 'contact__input--light' : ''}
-          name='reply_to'
-          id='reply_to'
-          required
-          placeholder='Your email'
-          value={toSend.reply_to}
-          onChange={handleChange}
-        />
-        <textarea
-          name='message_html'
-          id='message_html'
-          className={theme === 'light' ? 'contact__input--light' : ''}
-          placeholder='Your message'
-          required
-          rows={8}
-          value={toSend.message_html}
-          onChange={handleChange}
-        />
+    <div
+      className={`modal-overlay modal-overlay-${theme}${
+        showModal ? ' open' : ''
+      }`}
+      onClick={() => setShowModal(false)}>
+      <div
+        className={`modal-content modal-content-${theme}`}
+        onClick={e => e.stopPropagation()}>
         <button
-          type='submit'
-          className={`btn send${theme === 'light' ? ' light' : ''}`}>
-          Send
+          onClick={() => setShowModal(false)}
+          className={`modal-close modal-close-${theme}`}>
+          <AiFillCloseCircle />
         </button>
-      </form>
-    </section>
+        <section className='contact'>
+          <h2 className={`page-header page-header-${theme}`}>Contact Me</h2>
+          {isSent && (
+            <Notification message='Message sent! Thank you!' isError={false} />
+          )}
+          {errorMessage && (
+            <Notification message={errorMessage} isError={true} />
+          )}
+          <form onSubmit={handleSubmit}>
+            <input
+              type='text'
+              name='to_name'
+              id='to_name'
+              placeholder='angelrod'
+              value={to_name}
+              disabled
+              hidden
+            />
+            <input
+              type='text'
+              className={theme === 'light' ? 'contact__input--light' : ''}
+              name='from_name'
+              id='from_name'
+              required
+              placeholder='Your name'
+              value={toSend.from_name}
+              onChange={handleChange}
+            />
+            <input
+              type='text'
+              className={theme === 'light' ? 'contact__input--light' : ''}
+              name='reply_to'
+              id='reply_to'
+              required
+              placeholder='Your email'
+              value={toSend.reply_to}
+              onChange={handleChange}
+            />
+            <textarea
+              name='message_html'
+              id='message_html'
+              className={theme === 'light' ? 'contact__input--light' : ''}
+              placeholder='Your message'
+              required
+              rows={8}
+              value={toSend.message_html}
+              onChange={handleChange}
+            />
+            <button
+              type='submit'
+              className={`btn send${theme === 'light' ? ' light' : ''}`}>
+              Send
+            </button>
+          </form>
+        </section>
+      </div>
+    </div>
   );
 }
 
 Notification.propTypes = {
   message: PropTypes.string.isRequired,
   isError: PropTypes.bool.isRequired,
+};
+
+Contact.propTypes = {
+  showModal: PropTypes.bool.isRequired,
+  setShowModal: PropTypes.func.isRequired,
 };
 
 export default Contact;

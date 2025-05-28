@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Navbar from './components/Navbar';
 import Landing from './components/Landing';
 import About from './components/About';
@@ -9,6 +10,7 @@ import Footer from './components/Footer';
 import { ThemeProvider } from './components/ThemeContext';
 
 function App() {
+  const [showModal, setShowModal] = useState(false);
   return (
     <ThemeProvider>
       <Navbar />
@@ -17,10 +19,10 @@ function App() {
         <About />
         <Resume />
         <Projects />
-        <Contact />
         <ScrollToTop />
       </main>
-      <Footer />
+      <Contact showModal={showModal} setShowModal={setShowModal} />
+      <Footer setShowModal={setShowModal} />
     </ThemeProvider>
   );
 }

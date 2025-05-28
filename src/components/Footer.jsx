@@ -2,11 +2,22 @@ import { FaLinkedin, FaGithub, FaReact } from 'react-icons/fa';
 import { GoMail } from 'react-icons/go';
 import { ImFontSize } from 'react-icons/im';
 import { useTheme } from './ThemeContext';
+import PropTypes from 'prop-types';
 
-export default function Footer() {
+export default function Footer({ setShowModal }) {
   const { theme } = useTheme();
   return (
     <div className={`footer${theme === 'light' ? ' light' : ''}`}>
+      <a
+        href='#'
+        className={`footer__link${theme === 'light' ? ' light' : ''}`}
+        title='Send Me An Email'
+        onClick={e => {
+          e.preventDefault();
+          setShowModal(true);
+        }}>
+        <GoMail />
+      </a>
       <a
         href='https://www.linkedin.com/in/angelrodriguezlead/'
         className={`footer__link${theme === 'light' ? ' light' : ''}`}
@@ -22,13 +33,6 @@ export default function Footer() {
         target='_blank'
         title='Github Profile'>
         <FaGithub />
-      </a>
-      <a
-        href='mailto:node@beachlife.email'
-        className={`footer__link${theme === 'light' ? ' light' : ''}`}
-        rel='noreferrer'
-        title='Send Me An Email'>
-        <GoMail />
       </a>
       <p>
         <FaReact
@@ -49,3 +53,7 @@ export default function Footer() {
     </div>
   );
 }
+
+Footer.propTypes = {
+  setShowModal: PropTypes.func.isRequired,
+};
