@@ -770,13 +770,8 @@ body.dark textarea {
     margin-bottom: 0.5em;
   }
 
-  .footer {
-    height: 30px;
-    padding: 0.5em 0;
-  }
-
-  .footer__link {
-    font-size: 1.2em;
+  .projects {
+    padding: 3em 0;
   }
 
   p {
