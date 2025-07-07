@@ -8,6 +8,7 @@ import 'react-vertical-timeline-component/style.min.css';
 import WorkIcon from '@mui/icons-material/Work';
 import SchoolIcon from '@mui/icons-material/School';
 import StarIcon from '@mui/icons-material/Star';
+import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
 import ArticleIcon from '@mui/icons-material/Article';
 
 function Resume() {
@@ -137,12 +138,18 @@ function Resume() {
                   : '1px solid var(--charcoal)',
             }}
             icon={<ArticleIcon />}>
-            <a
-              href='https://github.com/angelr1076/Resume/blob/main/rodriguez_angel_resume_2025-03-25.pdf'
-              target='_blank'
-              rel='noreferrer'>
-              View My Resume on Github (PDF)
-            </a>
+            <h3 className='vertical-timeline-element-title'>My Resume</h3>
+            <div style={{ textAlign: 'center' }}>
+              <p>
+                <a
+                  href='/rodriguez_angel_resume_2025.pdf'
+                  download='rodriguez_angel_resume_2025.pdf'
+                  className='resume-download-button'>
+                  Download My Resume
+                  <PictureAsPdfIcon style={{ marginLeft: '8px' }} />
+                </a>
+              </p>
+            </div>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             iconStyle={{
