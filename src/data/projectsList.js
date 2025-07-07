@@ -14,6 +14,7 @@ const projects = [
     description:
       'Case Crime Trace is A Django-based app that lets citizens and law enforcement report and track crimes and suspects. Features include real-time updates and user-specific tracking.',
     image: cctImage,
+    alt: 'Screenshot of Case Crime Trace Django app interface',
     live: 'https://cct.up.railway.app/',
     github: 'https://github.com/angelr1076/django-cct',
     builtWith: ['SiJavascript', 'SiPython', 'SiDjango'],
@@ -24,6 +25,7 @@ const projects = [
     description:
       'Django Mibrary is a full-stack web platform that allows users to create profiles, manage personal libraries, and post book reviews. It integrates Bootstrap alerts with Django’s messaging framework, uses Cloudinary API for image uploads, and incorporates CKEditor to support rich-text book summaries.',
     image: mibraryImage,
+    alt: 'Screenshot of Mibrary Django library management app',
     live: 'https://mibrary.up.railway.app/',
     github: 'https://github.com/angelr1076/django-mibrary',
     builtWith: ['SiJavascript', 'SiPython', 'SiDjango'],
@@ -34,6 +36,7 @@ const projects = [
     description:
       'Bidstrocity is an eBay-like Django auction site designed for creating, managing, and bidding on listings. It allows users to comment on, watch, and close auctions while dynamically tracking bids and statuses in real-time.',
     image: bidstrocityImage,
+    alt: 'Screenshot of Bidstrocity Django auction site',
     live: 'https://bidstrocity.up.railway.app/',
     github: 'https://github.com/angelr1076/commerce',
     builtWith: ['SiPython', 'SiDjango'],
@@ -44,7 +47,8 @@ const projects = [
     description:
       'Map Sync Pro is designed to streamline the integration of user data with geospatial mapping. The tool combines the precision of mapping technologies with the complexity of user-specific data, providing an intuitive interface for geographic and demographic analysis.',
     image:
-      'https://res.cloudinary.com/angelrodriguez/image/upload/v1703191479/portfolio_2023/mapsyncshot.png', // Not stored locally
+      'https://res.cloudinary.com/angelrodriguez/image/upload/v1703191479/portfolio_2023/mapsyncshot.png',
+    alt: 'Screenshot of Map Sync Pro geospatial mapping tool',
     live: 'https://mapsyncpro.pages.dev/',
     github: 'https://github.com/angelr1076/MapSyncPro',
     builtWith: ['SiJavascript', 'SiHere'],
@@ -55,6 +59,7 @@ const projects = [
     description:
       'Battleship, just like the classic board-game, features a smart AI opponent. Built using best practices like factory functions and module bundling via Webpack and Jest testing.',
     image: battleshipImage,
+    alt: 'Screenshot of Battleship JavaScript game board',
     live: 'https://battleship-boom.pages.dev/',
     github: 'https://github.com/angelr1076/Battleship',
     builtWith: ['SiJavascript', 'SiJest', 'SiBootstrap', 'SiWebpack'],
@@ -65,6 +70,7 @@ const projects = [
     description:
       'Map Attack Remastered is a revamped programming boot-camp project that uses Google Maps APIs for interactive country location gaming. The update includes modularized functions, enhanced UI feedback, and a more responsive design using Flexbox and CSS Grid.',
     image: mapattackImage,
+    alt: 'Screenshot of Map Attack interactive Google Maps game',
     live: 'https://mapattackremastered-production.up.railway.app/',
     github: 'https://github.com/angelr1076/MapAttackRemastered',
     builtWith: ['SiJavascript', 'SiGooglemaps'],
@@ -75,6 +81,7 @@ const projects = [
     description:
       "Knight's Travails uses a Breadth-First Search (BFS) algorithm to find the shortest path a chess knight can take between two squares on an 8x8 board. The function, knightMoves, outputs the squares the knight will land on along the way, treating the board as a 2D coordinate system that is interactive.",
     image: knightTravailsImage,
+    alt: "Screenshot of Knight's Travails chess algorithm visualizer",
     live: 'https://angelr1076.github.io/Knight-Travails/',
     github: 'https://github.com/angelr1076/Knight-Travails',
     builtWith: ['SiJavascript'],
@@ -85,6 +92,7 @@ const projects = [
     description:
       'A simple shopping cart built with React that uses the Context API, React Router and FontAwesome.',
     image: santaCarlaSurfImage,
+    alt: 'Screenshot of React Shopping Cart project home page',
     live: 'https://santa-carla-surf.pages.dev/',
     github:
       'https://github.com/angelr1076/React-Shopping-Cart?tab=readme-ov-file',
@@ -96,6 +104,7 @@ const projects = [
     description:
       'This project is a modern, interactive memory card game built using React. Designed to be both engaging and visually appealing, it offers a fun and challenging way to test and improve your memory.',
     image: pokeCardImage,
+    alt: 'Screenshot of Poké Card React memory game project',
     live: 'https://poke-cards.pages.dev/',
     github: 'https://github.com/angelr1076/MemoryCard',
     builtWith: ['FaReact', 'SiVite'],
