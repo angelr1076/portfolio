@@ -244,6 +244,11 @@ button.navbar-toggler:hover {
   transform: rotate(-45deg);
 }
 
+.navbar.shadow {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
 /* Light/Dark Toggle Switch */
 .sun-icon,
 .moon-icon {

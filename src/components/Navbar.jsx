@@ -1,9 +1,10 @@
-import { useState, useEffect } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 import { useTheme } from './ThemeContext';
 import { BsSun, BsMoonStars } from 'react-icons/bs';
 
 export default function Navbar() {
+  const navbarRef = useRef(null);
   const [menuOpen, setMenuOpen] = useState(false);
   const [landingActive, setLandingActive] = useState(true);
   const { theme, toggleTheme } = useTheme();
@@ -26,11 +27,15 @@ export default function Navbar() {
   );
 
   useEffect(function detectTopOfPage() {
+    const navbarElement = navbarRef.current;
+
     const handleScroll = () => {
       if (window.scrollY < 10) {
         setLandingActive(true);
+        navbarElement.classList.remove('shadow');
       } else {
         setLandingActive(false);
+        navbarElement.classList.add('shadow');
       }
     };
 
@@ -43,7 +48,10 @@ export default function Navbar() {
 
   return (
     <>
-      <nav id='navbar' className={`navbar${theme === 'light' ? ' light' : ''}`}>
+      <nav
+        id='navbar'
+        ref={navbarRef}
+        className={`navbar${theme === 'light' ? ' light' : ''}`}>
         <button
           className='navbar-toggler'
           type='button'
