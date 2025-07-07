@@ -12,7 +12,7 @@ const projects = [
     id: 2,
     title: 'Case Crime Trace',
     description:
-      'Case Crime Trace is A Django-based app that lets citizens and law enforcement report and track crimes and suspects. Features include real-time updates and user-specific tracking.',
+      'I built Case Crime Trace to give citizens a way to efficiently report and track local crimes. This Django app includes user authentication, real-time updates, and suspect reporting features to enhance community safety. Through this project, I strengthened my backend skills, particularly in Django models and authentication workflows.',
     image: cctImage,
     alt: 'Screenshot of Case Crime Trace Django app interface',
     live: 'https://cct.up.railway.app/',
@@ -23,7 +23,7 @@ const projects = [
     id: 1,
     title: 'Mibrary',
     description:
-      'Django Mibrary is a full-stack web platform that allows users to create profiles, manage personal libraries, and post book reviews. It integrates Bootstrap alerts with Django’s messaging framework, uses Cloudinary API for image uploads, and incorporates CKEditor to support rich-text book summaries.',
+      'I built Mibrary to manage my personal library and book reviews in one place. This Django app allows users to manage libraries, post rich-text reviews with CKEditor, and upload images via Cloudinary. I sharpened my skills in integrating third-party APIs and enhanced my skills in full-stack app deployment.',
     image: mibraryImage,
     alt: 'Screenshot of Mibrary Django library management app',
     live: 'https://mibrary.up.railway.app/',
@@ -34,7 +34,7 @@ const projects = [
     id: 10,
     title: 'Bidstrocity',
     description:
-      'Bidstrocity is an eBay-like Django auction site designed for creating, managing, and bidding on listings. It allows users to comment on, watch, and close auctions while dynamically tracking bids and statuses in real-time.',
+      'I built Bidstrocity to understand auction logic by recreating an eBay-like bidding platform. This Django app lets users create, manage, and bid on listings with commenting and watchlist features. It deepened my knowledge of database relationships, models, and user session management in Django.',
     image: bidstrocityImage,
     alt: 'Screenshot of Bidstrocity Django auction site',
     live: 'https://bidstrocity.up.railway.app/',
@@ -45,7 +45,7 @@ const projects = [
     id: 7,
     title: 'Map Sync Pro',
     description:
-      'Map Sync Pro is designed to streamline the integration of user data with geospatial mapping. The tool combines the precision of mapping technologies with the complexity of user-specific data, providing an intuitive interface for geographic and demographic analysis.',
+      'I built Map Sync Pro to integrate user data with geospatial mapping for visualization and analysis. This tool combines user-specific data with mapping technologies to provide geographic and demographic insights. It enhanced my geospatial mapping skills and API integration practices.',
     image:
       'https://res.cloudinary.com/angelrodriguez/image/upload/v1703191479/portfolio_2023/mapsyncshot.png',
     alt: 'Screenshot of Map Sync Pro geospatial mapping tool',
@@ -57,7 +57,7 @@ const projects = [
     id: 5,
     title: 'Battleship',
     description:
-      'Battleship, just like the classic board-game, features a smart AI opponent. Built using best practices like factory functions and module bundling via Webpack and Jest testing.',
+      'I built Battleship to practice algorithm logic and DOM manipulation by recreating the classic game. It features a smart AI opponent, factory functions, Webpack module bundling, and Jest testing. This project improved my modular code design, testing, and bundling workflow skills.',
     image: battleshipImage,
     alt: 'Screenshot of Battleship JavaScript game board',
     live: 'https://battleship-boom.pages.dev/',
@@ -68,7 +68,7 @@ const projects = [
     id: 3,
     title: 'Map Attack',
     description:
-      'Map Attack Remastered is a revamped programming boot-camp project that uses Google Maps APIs for interactive country location gaming. The update includes modularized functions, enhanced UI feedback, and a more responsive design using Flexbox and CSS Grid.',
+      'I built Map Attack to enhance an older bootcamp project into a modular, responsive app. The remastered version uses Google Maps API integration, modularized functions, and responsive design with Flexbox and CSS Grid. It reinforced best practices in modular coding and responsive UI design.',
     image: mapattackImage,
     alt: 'Screenshot of Map Attack interactive Google Maps game',
     live: 'https://mapattackremastered-production.up.railway.app/',
@@ -79,7 +79,7 @@ const projects = [
     id: 4,
     title: "Knight's Travails",
     description:
-      "Knight's Travails uses a Breadth-First Search (BFS) algorithm to find the shortest path a chess knight can take between two squares on an 8x8 board. The function, knightMoves, outputs the squares the knight will land on along the way, treating the board as a 2D coordinate system that is interactive.",
+      "I built Knight's Travails to practice implementing search algorithms for pathfinding problems. It uses a Breadth-First Search (BFS) algorithm to find the shortest route a chess knight can take on an 8x8 board. This project enhanced my understanding of graph traversal algorithms and interactive visualizations.",
     image: knightTravailsImage,
     alt: "Screenshot of Knight's Travails chess algorithm visualizer",
     live: 'https://angelr1076.github.io/Knight-Travails/',
@@ -90,7 +90,7 @@ const projects = [
     id: 9,
     title: 'React Shopping Cart',
     description:
-      'A simple shopping cart built with React that uses the Context API, React Router and FontAwesome.',
+      'I built React Shopping Cart to solidify my React state management and routing skills. It uses Context API for state management and React Router for navigation. This project deepened my practical understanding of React state patterns and modern build tools.',
     image: santaCarlaSurfImage,
     alt: 'Screenshot of React Shopping Cart project home page',
     live: 'https://santa-carla-surf.pages.dev/',
@@ -102,7 +102,7 @@ const projects = [
     id: 8,
     title: 'Poké Card',
     description:
-      'This project is a modern, interactive memory card game built using React. Designed to be both engaging and visually appealing, it offers a fun and challenging way to test and improve your memory.',
+      'I built Poké Card as a fun memory game to practice React component architecture. It is an interactive React-based memory card game with dynamic state updates and visual feedback. This project improved my React hooks knowledge and component re-rendering strategies.',
     image: pokeCardImage,
     alt: 'Screenshot of Poké Card React memory game project',
     live: 'https://poke-cards.pages.dev/',
