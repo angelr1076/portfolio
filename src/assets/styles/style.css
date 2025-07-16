@@ -72,11 +72,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1.25em;
-}
-
-.main>section {
-  /* padding-top: var(--navbar-height); */
+  padding: 3em 1.5em;
 }
 
 section>h2 {
@@ -377,7 +373,7 @@ button.navbar-toggler:hover {
 }
 
 .project-card__img {
-  max-width: 800px;
+  max-width: 700px;
 }
 
 .project-card__details-container {
@@ -816,6 +812,10 @@ body.dark textarea {
 
   .landing img {
     width: 75%;
+  }
+
+  .project-card__img {
+    width: 85%;
   }
 
   .navbar-collapse {
