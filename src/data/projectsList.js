@@ -71,7 +71,7 @@ const projects = [
       'I built Map Attack to enhance an older bootcamp project into a modular, responsive app. The remastered version uses Google Maps API integration, modularized functions, and responsive design with Flexbox and CSS Grid. It reinforced best practices in modular coding and responsive UI design.',
     image: mapattackImage,
     alt: 'Screenshot of Map Attack interactive Google Maps game',
-    live: 'https://mapattackremastered-production.up.railway.app/',
+    live: 'https://mapattackremastered.pages.dev/',
     github: 'https://github.com/angelr1076/MapAttackRemastered',
     builtWith: ['SiJavascript', 'SiGooglemaps'],
   },

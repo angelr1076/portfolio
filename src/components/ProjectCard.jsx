@@ -27,16 +27,16 @@ function handleClick(e) {
 }
 
 const iconMap = {
-  SiJavascript: <SiJavascript />,
-  FaReact: <SiReact />,
-  SiJest: <SiJest />,
-  SiBootstrap: <SiBootstrap />,
-  SiDotenv: <SiDotenv />,
-  SiWebpack: <SiWebpack />,
-  SiGooglemaps: <SiGooglemaps />,
-  SiPython: <SiPython />,
-  SiDjango: <SiDjango />,
-  SiHere: <SiHere />,
+  SiJavascript: { icon: <SiJavascript />, title: 'JavaScript' },
+  FaReact: { icon: <SiReact />, title: 'React' },
+  SiJest: { icon: <SiJest />, title: 'Jest' },
+  SiBootstrap: { icon: <SiBootstrap />, title: 'Bootstrap' },
+  SiDotenv: { icon: <SiDotenv />, title: 'Dotenv' },
+  SiWebpack: { icon: <SiWebpack />, title: 'Webpack' },
+  SiGooglemaps: { icon: <SiGooglemaps />, title: 'Google Maps API' },
+  SiPython: { icon: <SiPython />, title: 'Python' },
+  SiDjango: { icon: <SiDjango />, title: 'Django' },
+  SiHere: { icon: <SiHere />, title: 'HERE Maps API' },
 };
 export default function ProjectCard({
   title,
@@ -57,11 +57,19 @@ export default function ProjectCard({
             {title}
           </h3>
           <div className='built-with-icons'>
-            {builtWith.map((icon, index) => (
-              <span style={{ marginRight: '0.8em' }} key={index}>
-                {iconMap[icon]}
-              </span>
-            ))}
+            {builtWith.map((iconKey, index) => {
+              const tech = iconMap[iconKey];
+              if (!tech) return null;
+              return (
+                <span
+                  style={{ marginRight: '0.8em' }}
+                  key={index}
+                  alt={tech.title}
+                  title={tech.title}>
+                  {tech.icon}
+                </span>
+              );
+            })}
           </div>
         </div>
         <p className='description'>{description}</p>
