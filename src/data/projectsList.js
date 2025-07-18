@@ -12,7 +12,7 @@ const projects = [
     id: 2,
     title: 'Case Crime Trace',
     description:
-      'I built Case Crime Trace to give citizens a way to efficiently report and track local crimes. This Django app includes user authentication, real-time updates, and suspect reporting features to enhance community safety. Through this project, I strengthened my backend skills, particularly in Django models and authentication workflows.',
+      'I built Case Crime Trace to give citizens a way to efficiently report and track local crimes. This Django app includes user authentication, real-time updates, and suspect reporting features to enhance community safety. Through this project, I strengthened my backend skills, particularly in Django models and authentication workflows. CCT is fronted by Cloudflare’s global network for SSL, caching, and rate-limited DDoS protection, while the core app is hosted on Railway.',
     image: cctImage,
     alt: 'Screenshot of Case Crime Trace Django app interface',
     live: 'https://crimetrace.online/',
@@ -23,7 +23,7 @@ const projects = [
     id: 1,
     title: 'Mibrary',
     description:
-      'I built Mibrary to manage my personal library and book reviews in one place. This Django app allows users to manage libraries, post rich-text reviews with CKEditor, and upload images via Cloudinary. I sharpened my skills in integrating third-party APIs and enhanced my skills in full-stack app deployment.',
+      'I built Mibrary to manage my personal library and book reviews in one place. This Django app allows users to manage libraries, post rich-text reviews with CKEditor, and upload images via Cloudinary. I sharpened my skills in integrating third-party APIs and enhanced my skills in full-stack app deployment. Mibrary is served through Cloudflare with DDoS protection and SSL, reverse-proxied to Railway hosting.',
     image: mibraryImage,
     alt: 'Screenshot of Mibrary Django library management app',
     live: 'https://mibrary.online/',
@@ -34,7 +34,7 @@ const projects = [
     id: 10,
     title: 'Bidstrocity',
     description:
-      'I built Bidstrocity to understand auction logic by recreating an eBay-like bidding platform. This Django app lets users create, manage, and bid on listings with commenting and watchlist features. It deepened my knowledge of database relationships, models, and user session management in Django.',
+      'I built Bidstrocity to understand auction logic by recreating an eBay-like bidding platform. This Django app lets users create, manage, and bid on listings with commenting and watchlist features. It deepened my knowledge of database relationships, models, and user session management in Django. The app is fronted by Cloudflare for added caching, SSL, and basic DDoS shielding, with the backend hosted on Railway.',
     image: bidstrocityImage,
     alt: 'Screenshot of Bidstrocity Django auction site',
     live: 'https://bidstrocity.online/',
