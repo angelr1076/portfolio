@@ -72,7 +72,10 @@ export default function ProjectCard({
             })}
           </div>
         </div>
-        <p className='description'>{description}</p>
+        <p
+          className='description'
+          dangerouslySetInnerHTML={{ __html: description }}
+        />
         <div className='btn-container'>
           <button
             className={`btn live${theme === 'light' ? ' light' : ''}`}

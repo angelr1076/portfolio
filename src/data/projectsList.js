@@ -5,14 +5,13 @@ import battleshipImage from '../assets/images/battleship_screen.png';
 import mapattackImage from '../assets/images/mapattack.png';
 import knightTravailsImage from '../assets/images/knightstravails.png';
 import santaCarlaSurfImage from '../assets/images/santa-carla-surf-home.png';
-import pokeCardImage from '../assets/images/pokecard.png';
 
 const projects = [
   {
-    id: 2,
+    id: 1,
     title: 'Case Crime Trace',
     description:
-      'I built Case Crime Trace to give citizens a way to efficiently report and track local crimes. This Django app includes user authentication, real-time updates, and suspect reporting features to enhance community safety. Through this project, I strengthened my backend skills, particularly in Django models and authentication workflows. CCT is fronted by Cloudflare’s global network for SSL, caching, and rate-limited DDoS protection, while the core app is hosted on Railway.',
+      'I built Case Crime Trace to give citizens a way to efficiently report and track local crimes. This Django app includes user authentication, real-time updates, and suspect reporting features to enhance community safety. Through this project, I strengthened my backend skills, particularly in Django models and authentication workflows. CCT is fronted by Cloudflare’s global network for SSL, caching, and rate-limited DDoS protection, while the core app is hosted on Railway.<br><br> Guest login is available for quick access to the app. <br>Username: <code>guestpass</code> Password: <code>userpass</code>.',
     image: cctImage,
     alt: 'Screenshot of Case Crime Trace Django app interface',
     live: 'https://crimetrace.online/',
@@ -20,10 +19,10 @@ const projects = [
     builtWith: ['SiJavascript', 'SiPython', 'SiDjango'],
   },
   {
-    id: 1,
+    id: 2,
     title: 'Mibrary',
     description:
-      'I built Mibrary to manage my personal library and book reviews in one place. This Django app allows users to manage libraries, post rich-text reviews with CKEditor, and upload images via Cloudinary. I sharpened my skills in integrating third-party APIs and enhanced my skills in full-stack app deployment. Mibrary is served through Cloudflare with DDoS protection and SSL, reverse-proxied to Railway hosting.',
+      'I built Mibrary to manage my personal library and book reviews in one place. This Django app allows users to manage libraries, post rich-text reviews with CKEditor, and upload images via Cloudinary. I sharpened my skills in integrating third-party APIs and enhanced my skills in full-stack app deployment. Mibrary is served through Cloudflare with DDoS protection and SSL, reverse-proxied to Railway hosting.<br><br> Guest login is available for quick access to the app. <br>Username: <code>guestpass</code> Password: <code>userpass</code>.',
     image: mibraryImage,
     alt: 'Screenshot of Mibrary Django library management app',
     live: 'https://mibrary.online/',
@@ -31,10 +30,10 @@ const projects = [
     builtWith: ['SiJavascript', 'SiPython', 'SiDjango'],
   },
   {
-    id: 10,
+    id: 3,
     title: 'Bidstrocity',
     description:
-      'I built Bidstrocity to understand auction logic by recreating an eBay-like bidding platform. This Django app lets users create, manage, and bid on listings with commenting and watchlist features. It deepened my knowledge of database relationships, models, and user session management in Django. The app is fronted by Cloudflare for added caching, SSL, and basic DDoS shielding, with the backend hosted on Railway.',
+      'I built Bidstrocity to understand auction logic by recreating an eBay-like bidding platform. This Django app lets users create, manage, and bid on listings with commenting and watchlist features. It deepened my knowledge of database relationships, models, and user session management in Django. The app is fronted by Cloudflare for added caching, SSL, and basic DDoS shielding, with the backend hosted on Railway. <br><br> Guest login is available for quick access to the app. <br>Username: <code>guestpass</code> Password: <code>userpass</code>.',
     image: bidstrocityImage,
     alt: 'Screenshot of Bidstrocity Django auction site',
     live: 'https://bidstrocity.online/',
@@ -42,7 +41,7 @@ const projects = [
     builtWith: ['SiPython', 'SiDjango'],
   },
   {
-    id: 7,
+    id: 4,
     title: 'Map Sync Pro',
     description:
       'I built Map Sync Pro to integrate user data with geospatial mapping for visualization and analysis. This tool combines user-specific data with mapping technologies to provide geographic and demographic insights. It enhanced my geospatial mapping skills and API integration practices.',
@@ -65,7 +64,7 @@ const projects = [
     builtWith: ['SiJavascript', 'SiJest', 'SiBootstrap', 'SiWebpack'],
   },
   {
-    id: 3,
+    id: 6,
     title: 'Map Attack',
     description:
       'I built Map Attack to enhance an older bootcamp project into a modular, responsive app. The remastered version uses Google Maps API integration, modularized functions, and responsive design with Flexbox and CSS Grid. It reinforced best practices in modular coding and responsive UI design.',
@@ -76,7 +75,7 @@ const projects = [
     builtWith: ['SiJavascript', 'SiGooglemaps'],
   },
   {
-    id: 4,
+    id: 7,
     title: "Knight's Travails",
     description:
       "I built Knight's Travails to practice implementing search algorithms for pathfinding problems. It uses a Breadth-First Search (BFS) algorithm to find the shortest route a chess knight can take on an 8x8 board. This project enhanced my understanding of graph traversal algorithms and interactive visualizations.",
@@ -87,7 +86,7 @@ const projects = [
     builtWith: ['SiJavascript'],
   },
   {
-    id: 9,
+    id: 8,
     title: 'React Shopping Cart',
     description:
       'I built React Shopping Cart to solidify my React state management and routing skills. It uses Context API for state management and React Router for navigation. This project deepened my practical understanding of React state patterns and modern build tools.',
@@ -97,17 +96,6 @@ const projects = [
     github:
       'https://github.com/angelr1076/React-Shopping-Cart?tab=readme-ov-file',
     builtWith: ['FaReact', 'SiDotenv', 'SiVite'],
-  },
-  {
-    id: 8,
-    title: 'Poké Card',
-    description:
-      'I built Poké Card as a fun memory game to practice React component architecture. It is an interactive React-based memory card game with dynamic state updates and visual feedback. This project improved my React hooks knowledge and component re-rendering strategies.',
-    image: pokeCardImage,
-    alt: 'Screenshot of Poké Card React memory game project',
-    live: 'https://poke-cards.pages.dev/',
-    github: 'https://github.com/angelr1076/MemoryCard',
-    builtWith: ['FaReact', 'SiVite'],
   },
 ];
 
